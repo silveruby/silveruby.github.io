@@ -4,13 +4,51 @@
  <title>Ruby Zheng</title>
  <link href="http://www.rubyzheng.com/atom.xml" rel="self"/>
  <link href="http://www.rubyzheng.com/"/>
- <updated>2014-12-31T17:43:50-05:00</updated>
+ <updated>2015-01-01T17:48:04-05:00</updated>
  <id>http://www.rubyzheng.com</id>
  <author>
    <name>Ruby Zheng</name>
    <email>zhengsan@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Happiness in Noble Silence</title>
+   <link href="http://www.rubyzheng.com//spiritual/2014/09/05/happiness-in-noble-silence/"/>
+   <updated>2014-09-05T00:00:00-04:00</updated>
+   <id>http://www.rubyzheng.com/spiritual/2014/09/05/happiness-in-noble-silence</id>
+   <content type="html">&lt;p&gt;Last weekend, I went to the &lt;a href=&quot;http://www.wondharmacenter.org/&quot;&gt;Won Dharma Center in upstate New York&lt;/a&gt; for a Labor Day weekend retreat. My friend and I drove to the center on Friday afternoon and arrived just in time for dinner. There were a mix of people in the dinning hall, the young and the old, all ready to partake in a 3-days meditation. As I sat in the dinning hall, I felt gentle and welcoming energy from everyone and quickly settled with the surrounding.&lt;/p&gt;
+
+&lt;p&gt;This retreat was something I desperately needed. For the past few weeks, I&amp;#39;ve been extremely frustrated and stressed out with life. I felt lost and bitter at work, at home and mostly importantly in my mind. My mind was racing constantly like a honey bee buzzing from one flower to another, except it had no nectar to gather. I was running low on energy and needed to recharge. &lt;/p&gt;
+
+&lt;p&gt;Being surrounded by nature and people with good intentions helped me step back and find my inner peace. One of the rules during the retreat was to keep Noble Silence. Under Noble Silence, we had to refrain from speaking with each other with only necessary words spoken. This technique focuses on present moments and creates space to allow us to look deeply into ourselves. No words. Silence. And during the night, only sounds of gentle wind and night critters. &lt;/p&gt;
+
+&lt;p&gt;I loved keeping Noble Silence. Whenever I passed another person, I simply smiled at them and continued on without interruption in my mind. As my mind became free from others, I felt present with the late summer flowers (Golden Rod, Queen Ann&amp;#39;s Lace and Red Clover), the taste and smell of delicious food, and the simple joy of being alive. &lt;/p&gt;
+
+&lt;p&gt;When Noble Silence ended in the final day, I felt anxiety and panic arise. It was difficult coming out of silence to talking with people. While I truly appreciated the people at the retreat, I did not feel comfortable connecting with them using words. Words are constructs of expectation and judgement. &amp;quot;What do you do? Where are you from? How did you get here?&amp;quot; Do these conversations matter? They felt shallow in comparison to sharing common experiences. I felt the common experiences we had at the retreat were stronger than idle words we practice in our lives. &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hello World!</title>
+   <link href="http://www.rubyzheng.com//technology,/personal/2014/08/14/hello-world/"/>
+   <updated>2014-08-14T00:00:00-04:00</updated>
+   <id>http://www.rubyzheng.com/technology,/personal/2014/08/14/hello-world</id>
+   <content type="html">&lt;p&gt;Blogging has always been a way to help me organize my thoughts and share them with the world. The first time I blogged was back in 2001 using &lt;a href=&quot;http://www.blogger.com&quot;&gt;Blogger&lt;/a&gt;. Since then, I&amp;#39;ve used numerous other blogging platforms such as &lt;a href=&quot;http://xanga.com/&quot;&gt;Xanga&lt;/a&gt;, Pitas (now Diaryland), &lt;a href=&quot;http://www.livejournal.com/&quot;&gt;LiveJournal&lt;/a&gt;, &lt;a href=&quot;https://wordpress.com/&quot;&gt;WordPress&lt;/a&gt; and &lt;a href=&quot;https://www.tumblr.com/&quot;&gt;Tumblr&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;I stopped blogging a year into undergraduate school due to personal issues. Although I tried to pick it up a few times since then, it was hard for me to be consistent because of the rise of micro-blogging. I couldn&amp;#39;t decide if I should use micro-blogging platforms or pick one of many blogging platforms. &lt;/p&gt;
+
+&lt;p&gt;I tried to get into micro-blogging using services such as &lt;a href=&quot;https://twitter.com/&quot;&gt;Twitter&lt;/a&gt; and &lt;a href=&quot;https://facebook.com/&quot;&gt;Facebook&lt;/a&gt;, but this method never felt right. It is too curt and oftentimes mindless for me. So, after ditching the micro-blogging idea, I researched different blogging CMS and experienced analysis paralysis for years (and sadly, this is a common theme in my life). &lt;/p&gt;
+
+&lt;p&gt;The most common blogging CMS is WordPress. It is widely used by people and frankly, I have no fucking idea why. It is an over-bloated platform with way too many unnecessary features for my simple blogging needs. I wanted something minimal that loads fast and easy to maintain. Wordpress satisfied neither of them. &lt;/p&gt;
+
+&lt;p&gt;I tested out a few other CMSs but never found the right now until I came across &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jeykll&lt;/a&gt; when I was playing with Github Pages. The light-weight static site generator offered just the things I needed and none of the excessive crap. &lt;/p&gt;
+
+&lt;p&gt;There are a lot of fantastic resources for Jekyll blogs. This &lt;a href=&quot;http://joshualande.com/jekyll-github-pages-poole/&quot;&gt;article on how to create a simple blog&lt;/a&gt; was helpful read. I liked how simple it is to add extra features such as Disqus comments and Google Analytics on the website. In addition, I found this &lt;a href=&quot;http://charliepark.org/tags-in-jekyll/&quot;&gt;article on how to maintain tags&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;After being dormant for a couple of years, I&amp;#39;m excited to be blogging again. I plan to use blogging as a method to explore and document my interests and passions. Some common topics that I&amp;#39;ll focus on will be user experience design, technology, art, travel, minimalism, herbalism, and spiritual practices. &lt;/p&gt;
+</content>
+ </entry>
  
 
 </feed>

@@ -2,7 +2,6 @@
 
 layout: post
 title: Hello World!
-published: false
 categories: technology, personal
 tags: jekyll	
 

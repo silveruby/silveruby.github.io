@@ -2,7 +2,6 @@
 
 layout: post
 title: Happiness in Noble Silence
-published: false
 categories: spiritual
 tags: buddhism, retreat
 
