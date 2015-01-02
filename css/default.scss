@@ -6,13 +6,26 @@ body
 	font-size: 100%;
 	font-family: 'Open Sans', arial, sans-serif;
 
-	h1, h3, p {
+	h1, h3, p, ul, li {
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	.container{
 		width: 60%;
 		margin: 1em auto;
+
+		ul.navigation{
+			li{
+				display: inline;
+				list-style-type: none;
+				
+				h3{
+					display: inline;
+					margin-right: 2em;
+				}
+			}
+		}
+
 	}
 }
