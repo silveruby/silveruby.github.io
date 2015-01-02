@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Hello World!
+title: Hello world!
 category: technology
 tags: jekyll blog
 

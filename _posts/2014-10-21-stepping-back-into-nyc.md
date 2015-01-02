@@ -1,0 +1,13 @@
+---
+layout: post
+title: Stepping back into NYC
+category: travel
+tags: feelings reflection 
+---
+Early Monday morning this week, I packed one bag of clothes enough for 4 days, and took the Acela Express from Boston to Manhattan.  The train arrived around 10AM and immediately there was a rush of energy when I stepped onto the platform. I marched with the surrounding footsteps and shot straight into 34th street.  I swirled on the street as I tried to orient myself towards the PATH station. Left or Right? Oh Wait, East or West? My foot started moving before I could wrap around what was happening. There’s no time to think, gotta keep moving! 
+
+A year ago, I had to escape the city because I went through a lot of emotional shit when I lived here. It feels bizarre being back for work. Life in the Midwest and South were nothing compared to the Big Apple where people is on constant survival mode. Everything is speed up 2-4 times. My time here felt like 8 years, all compressed into 2 years. On top of that, my living space was pretty compressed as well. 
+
+Sometimes I think my life would’ve been ‘better’ had I sought a stable job in a mid-size city when I finished grad school. I would’ve at least saved more money instead of squandering them away in rent, food and mindless shopping spree. However, these thoughts are quickly quashed because I know myself too well to think that I would be complacent with that kind of boring lifestyle. At least, not so soon! Yes I had my heart broken a few times and made some crappy career moves, but I wouldn’t trade these experiences with anything else. What does ‘better’ mean for me anyways? At the core of my being, I value personal experiences and growth so much more than high status and money in life. 
+
+In China, one of the favorite things teachers like to ask students to do is to recite classic poems. I learned so many of them, when I was in elementary school. The only poem that remains in my memory now is 靜夜思 by Li Bai — it paints a traveler's nostalgia for home. When I came to American, the first poem I remember learning was “The Road Not Taken” by Robert Frost. Our teacher had us reciting it line by line in class. At the moment, I feel more connected with this poem than I do with 靜夜思. I don’t miss home because I haven't found a place to call home yet, I am still looking. But, I have chosen a path. While I do wonder sometimes if I should’ve taken a different path, in the end, it probably doesn’t really matter. LIfe is best when it is full of exploration and surprises.

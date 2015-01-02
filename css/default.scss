@@ -16,6 +16,9 @@ body
 		margin: 1em auto;
 
 		ul.navigation{
+			
+			margin-bottom: 2em;
+				
 			li{
 				display: inline;
 				list-style-type: none;
@@ -25,6 +28,22 @@ body
 					margin-right: 2em;
 				}
 			}
+		}
+		
+		ul.posts, ul.projects, ul.connect{
+			margin: 2em 0;
+			
+			li{
+				margin-left: 1.2em;
+				
+				span{
+					color: #333;
+				}
+			}
+		}
+		
+		&> h1{
+			font-size: 2em;
 		}
 
 	}

@@ -2,7 +2,7 @@
 
 ## About
 
-Hi, this is my personal website. Please contact me at [zhengsan@gmail.com](zhengsan@gmail.com) for any questions. 
+Hi, this is code for my personal website. Please contact me at [zhengsan@gmail.com](zhengsan@gmail.com) for any questions. 
 
 ## History
 
