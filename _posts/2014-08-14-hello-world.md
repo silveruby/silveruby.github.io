@@ -2,8 +2,8 @@
 
 layout: post
 title: Hello World!
-categories: technology, personal
-tags: jekyll	
+category: technology
+tags: jekyll blog
 
 ---
 

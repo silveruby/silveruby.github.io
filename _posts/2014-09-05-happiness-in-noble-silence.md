@@ -1,10 +1,8 @@
 ---
-
 layout: post
 title: Happiness in Noble Silence
-categories: spiritual
-tags: buddhism, retreat
-
+category: spiritual
+tags: buddhism retreat
 ---
 
 Last weekend, I went to the [Won Dharma Center in upstate New York](http://www.wondharmacenter.org/) for a Labor Day weekend retreat. My friend and I drove to the center on Friday afternoon and arrived just in time for dinner. There were a mix of people in the dinning hall, the young and the old, all ready to partake in a 3-days meditation. As I sat in the dinning hall, I felt gentle and welcoming energy from everyone and quickly settled with the surrounding.
