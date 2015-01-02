@@ -1,56 +1,42 @@
 ---
 ---
 /* STYLE */
-body
-{
+.post{
 
-	font-family: 'Open Sans', arial, sans-serif;
-
-	h1, h3, p {
-		margin: 0;
-		padding: 0;
+	h1{
+		font-size: 3em;
 	}
 
-	.post{
-
-		margin: auto;
-		width: 60%;
-
-		h1{
-			font-size: 3em;
+	h3{
+		font-size: 1.5em;
+	}
+	p{
+		font-size: 1.5em;
+		font-weight: 500;
+		line-height: 1.5em;
+		margin: 1.5em 0;
+	}
+	p.date, p.prev_next{
+		font-size: 1em;
+		color: #333;
+	}
+	p.title{
+		margin-top: 50px;
+	}
+	p.subtitle{
+		margin-top: 0px;
+	}
+	p.date{
+		margin: 0;
+	}
+	p.prev_next{
+		margin-top: 30px;
+		.prev{
+			float: left;
 		}
-		
-		h3{
-			font-size: 1.5em;
-		}
-		p{
-			font-size: 1.5em;
-			font-weight: 500;
-			line-height: 1.5em;
-			margin: 1.5em 0;
-		}
-		p.post-date, p.prev_next{
-			font-size: 1em;
-			color: #333;
-		}
-		p.post-title{
-			margin-top: 50px;
-		}
-		p.post-subtitle{
-			margin-top: 0px;
-		}
-		p.post-date{
-			margin: 10px 0;
-		}
-		p.prev_next{
-			margin-top: 30px;
-			.prev{
-				float: left;
-			}
-			.next{
-				float: right;
-				padding-right: 5px;
-			}
+		.next{
+			float: right;
+			padding-right: 5px;
 		}
 	}
 }

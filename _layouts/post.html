@@ -1,30 +1,16 @@
 ---
 layout: default
 ---
+<h3 class="header-title">
+	<a href="{{ site.baseurl }}blog/index.html" title="Blog">Blog</a> 
+</h3>
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <h3 class="post-subtitle">{{ page.subtitle }}</h3>
-  <p class="post-date">{{ page.date | date_to_string }}</p>
-  {{ content }}
-  <p class="prev_next">
-    <span class="prev">&#x276e; Older Post</span>
-    <span class="next">Newer Post &#x276f;</span>
-  </p>
-</div>
-
-<div class="pagination">
-  {% if page.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if page.previous_page %}
-    {% if page.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+	<h1 class="title">{{ page.title }}</h1>
+	<h3 class="subtitle">{{ page.subtitle }}</h3>
+	<p class="date">{{ page.date | date_to_string }}</p>
+	{{ content }}
+	<p class="prev_next">
+		<span class="prev">&#x276e; Older Post</span>
+		<span class="next">Newer Post &#x276f;</span>
+	</p>
 </div>
