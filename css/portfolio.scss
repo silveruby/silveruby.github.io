@@ -9,8 +9,8 @@
 		float: left;
 		position: relative;
 		
-		margin: 0 20px 13px 0;
-		padding: 15px;
+		margin: 0 2em 2em 0;
+		padding: 1em;
 		width: 200px;
 	
 		background: rgba(255, 255, 255, 1);
@@ -22,23 +22,34 @@
 		&.hover, &:hover, &.active, &:active{
 			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 			-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-			-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);						
+			-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);	
+			
+			.title{
+				visibility: visible;
+			}					
 		}
 				
 		.title{
+			visibility: hidden;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: #000;
+			margin: 1em;
+			width: 200px;
+			font-weight: 400;
 			
-			h6{
-				margin: 1em 0;
+			p{
+				margin: 1em;
 				
-				color: #666;
+				color: #FFF;
 				font-size: 1.0em;
 				line-height: 1.1em;
 
 				text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 				-moz-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);								
 				-webkit-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-			}			
-			
+			}	
 		} /*END Title*/
 		
 		.image{
