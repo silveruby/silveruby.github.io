@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<appstore>
+		
+	<widget>
+		<name>weather</name>
+		<version>2.0</version>		
+		<title>Weather</title> <!-- Show on the Header -->
+		<price>FREE</price>
+		<description>Shows Weather</description>
+		<category>News and Weather</category> <!-- Category of Widget -->
+		<developer>RNOC</developer> <!-- Developer of Widget -->
+		<contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->		
+		<view>icon</view> <!-- OUX Data Stuff -->
+		<selected>true</selected> <!-- OUX Data Stuff -->
+	</widget>
+
+	<widget>
+		<name>programprofile</name>
+		<version>1.0</version>		
+		<title>Program Profile</title> <!-- Show on the Header -->
+		<price>FREE</price>
+		<description>Shows Program/Show Information</description>
+		<category>Entertainment</category> <!-- Category of Widget -->
+		<developer>RNOC</developer> <!-- Developer of Widget -->
+		<contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->		
+		<view>icon</view> <!-- OUX Data Stuff -->
+		<selected>true</selected> <!-- OUX Data Stuff -->
+	</widget>
+	
+	<widget>
+		<name>newsopinion</name>
+		<version>1.0</version>		
+		<title>News Opinion</title> <!-- Show on the Header -->
+		<price>$0.99</price>
+		<description>Share opinions about news shows</description>
+		<category>News and Weather</category> <!-- Category of Widget -->
+		<developer>RNOC</developer> <!-- Developer of Widget -->
+		<contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->		
+		<view>icon</view> <!-- OUX Data Stuff -->
+		<selected>true</selected> <!-- OUX Data Stuff -->
+	</widget>
+    
+	<widget>
+		<name>gtnews</name>
+		<version>1.0</version>		
+		<title>GT News</title> <!-- Show on the Header -->
+		<price>FREE</price>
+		<description>Shows Georgia Tech News</description>
+		<category>News and Weather</category> <!-- Category of Widget -->
+		<developer>RNOC</developer> <!-- Developer of Widget -->
+		<contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->		
+		<view>icon</view> <!-- OUX Data Stuff -->
+		<selected>true</selected> <!-- OUX Data Stuff -->
+	</widget>
+	
+	<widget>
+		<name>SocialApp</name>
+		<version>1.0</version>		
+		<title>Facebook Social</title> <!-- Show on the Header -->
+		<price>FREE</price>
+		<description>Connect with friends via Facebook</description>
+		<category>Social</category> <!-- Category of Widget -->
+		<developer>RNOC</developer> <!-- Developer of Widget -->
+		<contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->		
+		<view>icon</view> <!-- OUX Data Stuff -->
+		<selected>true</selected> <!-- OUX Data Stuff -->
+	</widget>
+	<widget>
+		<name>dealscatcher</name>
+		<version>2.0</version>		
+		<title>Deals Catcher</title> <!-- Show on the Header -->
+		<price>Free</price>
+		<description>Deals Catcher for Commercials</description>
+		<category>Shopping</category> <!-- Category of Widget -->
+		<developer>RNOC</developer> <!-- Developer of Widget -->
+		<contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->		
+		<view>icon</view> <!-- OUX Data Stuff -->
+		<selected>true</selected> <!-- OUX Data Stuff -->
+	</widget>
+
+</appstore>

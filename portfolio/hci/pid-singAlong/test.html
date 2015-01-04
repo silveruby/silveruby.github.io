@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SingAlong!</title>
+	<link rel="stylesheet" type="text/css" href="test.css" />
+	<script type="text/javascript" src="swfobject.js"></script> 
+	<script type="text/javascript" src="json2.js"></script>
+	<script type="text/javascript" src="./jquery-1.6.1.min.js"></script>	
+	<script type="text/javascript" src="./jquery-ui-1.8.13.custom/js/jquery-ui-1.8.13.custom.min.js"></script> 	
+	<script type="text/javascript" src="test.js"></script> 
+	<script type="text/javascript" src="ajax.js"></script> 	
+</head>
+
+<!-- <body onload="init()"> -->
+<body>
+	<div id ="Wrapper">
+	
+		<div id = "HeaderBar">
+			<div id="Title"><a href="test.html">SingAlong!</a></div>
+			<div id="Help"><a href="help.html">Help</a></div>
+		</div> <!-- end of headerBar -->
+	
+		<div id = "MainContainer">
+		
+			<div id="MainSearch">
+				<form method="post" class="form" id="MainForm">  
+			        <table>  
+			            <tr>  
+			                <td><input class="text" id="MainFormSearch" type="text" value="Search A Song..." /></td>  
+			                <td><input id="MainFormSubmit" type="button" value="Find It!" onClick="createYouTubeGet(MainFormSearch.value)"/></td>  
+			            </tr>  
+			        </table>  
+			    </form> 
+				<div id="ActionTerms">Search, Watch, Create & Sing!</div>
+			</div>
+		
+			<div id="ResultsBar">
+			</div>
+		
+			<div id="VideoBar">
+				<div id = "videoBoxWrapper">
+					<div id ="videoBox">Loading...</div> <!-- end of videoBox -->					
+				</div> <!-- end of videoBoxWrapper -->	
+				<div id = "videoInfoWrapper">
+					<div id="videoInfo">
+						<p id="videoName"></p>
+						<p id="videoElapsed" style="display: inline"></p>
+						<p id="videoDuration" style="display: inline"></p>
+						<p id="lyricsExist"></p>
+						<div id ="lyricsBoxForm" style="display: none">
+							<textarea id='lyricsBox' rows="8" cols="35" onClick="clearTextArea();" value=""></textarea><br>
+							<input type='button' id='lyricsCreate' value='Sync Lyrics w/ Video' onClick="createLyrics()" />
+					</div>	
+				</div> <!-- end of videoBoxWrapper -->						
+			</div>
+		
+			<div id="LyricsBar">
+			</div>
+		
+		</div> <!-- end of headerBar -->
+	
+	</div> <!-- end of wrapper -->
+
+</body>
+</html>

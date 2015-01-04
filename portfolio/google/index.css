@@ -1,0 +1,93 @@
+h1, h2, h3 {
+	padding: 0;
+	margin: 5px;
+}
+
+#container { margin: auto;  }
+
+#wrapper{
+	padding: 10px;
+	font-family: arial, serif; font-size: 14px;
+	margin: auto;
+	width: 800px;
+}
+
+.content{
+	padding-left: 30px;
+}
+
+.content_style {
+	padding: 10px;
+	
+/*	-moz-border-radius: 15px;
+	border-radius: 15px;*/
+
+/*	-moz-box-shadow: 5px 5px 5px #ccc;
+  	-webkit-box-shadow: 5px 5px 5px #ccc;
+  	box-shadow: 5px 5px 5px #ccc;*/	
+}
+.content_style:hover{
+	background: #FFCF00;
+	padding: 10px;
+
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	-moz-box-shadow: 5px 5px 5px #ccc;
+  	-webkit-box-shadow: 5px 5px 5px #ccc;
+  	box-shadow: 5px 5px 5px #ccc;	
+}
+
+/*WIREFRAME*/
+#wireframe{ //CSS for Simple Gallery Example 1
+position: relative; /*keep this intact*/
+visibility: hidden; /*keep this intact*/
+border: 5px solid black;
+background: black;
+float:left;
+display:inline;
+}
+
+#wireframe .gallerydesctext{ //CSS for description DIV of Example 1 (if defined)
+text-align: left;
+font-size: 18px;
+padding: 2px 5px;
+}
+
+#wireframe_c{
+	width: 100%;
+	display:block;
+}
+#wireframe_content{
+	padding-left: 30px;
+	width: 50%;
+	float: left;
+	display:block;
+	height: 650px;
+}
+
+/*MOCKUP*/
+#mockup{ //CSS for Simple Gallery Example 1
+position: relative; /*keep this intact*/
+visibility: hidden; /*keep this intact*/
+border: 5px solid black;
+background: black;
+float:left;
+display:inline;
+}
+
+#mockup .gallerydesctext{ //CSS for description DIV of Example 1 (if defined)
+text-align: left;
+font-size: 18px;
+padding: 2px 5px;
+}
+
+#mockup_c{
+	width: 100%;
+}
+#mockup_content{
+	padding-left: 30px;
+	width: 50%;
+	float: left;
+	height: 650px;
+}

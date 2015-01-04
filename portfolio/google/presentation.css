@@ -1,0 +1,201 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+/*Menu*/
+
+#menu_wrapper{
+	height: 100%;
+	width: 800px;
+	margin: auto;
+	background: white;
+	padding: 20px;
+}
+
+#menu_wrapper #menu{
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	padding: 20px;
+	width: 300px;
+/*	background: gray;*/
+	color: white;
+}
+
+#menu_wrapper .menu_btn{
+	font-family: helvetica, verdana, sans-serif;
+	font-size: 24px;
+		
+	text-align: center;
+	margin: 10px;
+	padding: 25px;
+	color: white;	
+	
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	-moz-box-shadow: 5px 5px 5px #ccc;
+  	-webkit-box-shadow: 5px 5px 5px #ccc;
+  	box-shadow: 5px 5px 5px #ccc;
+}
+
+#menu_wrapper a{text-decoration: none;}
+
+#menu_wrapper a:hover{ text-decoration: none;	}
+
+#menu_wrapper #menu_exercise{ background: #31B639; }
+#menu_wrapper #menu_exercise:hover{ background: #FFCF00; }
+
+#menu_wrapper #menu_project1{ background: #1851CE; }
+#menu_wrapper #menu_project1:hover{background: #FFCF00;}
+
+#menu_wrapper #menu_project2{background: #C61800;}
+#menu_wrapper #menu_project2:hover{background: #FFCF00;}
+
+
+/*Exercise*/
+
+h1, h2, h3 {
+	padding: 0;
+	margin: 10px;
+}
+
+h4 {
+	padding-left: 10px;
+}
+
+#exercise_container { margin: auto;  }
+
+#exercise_wrapper{
+	padding: 10px;
+	font-family: Trebuchet, serif; font-size: 20px;
+	margin: auto;
+	width: 800px;
+}
+
+/*WIREFRAME*/
+#exercise_wireframe{ //CSS for Simple Gallery Example 1
+position: relative; /*keep this intact*/
+visibility: hidden; /*keep this intact*/
+border: 5px solid black;
+background: black;
+float:left;
+display:inline;
+}
+
+#exercise_wireframe .gallerydesctext{ //CSS for description DIV of Example 1 (if defined)
+text-align: left;
+font-size: 18px;
+padding: 2px 5px;
+}
+
+#exercise_wireframe_c{
+	width: 100%;
+	display:block;
+}
+#exercise_wireframe_content{
+	padding-left: 30px;
+	width: 50%;
+	float: left;
+	display:block;
+	height: 750px;
+}
+
+/*MOCKUP*/
+#exercise_mockup{ //CSS for Simple Gallery Example 1
+position: relative; /*keep this intact*/
+visibility: hidden; /*keep this intact*/
+border: 5px solid black;
+background: black;
+float:left;
+display:inline;
+}
+
+#exercise_mockup .gallerydesctext{ //CSS for description DIV of Example 1 (if defined)
+text-align: left;
+font-size: 18px;
+padding: 2px 5px;
+}
+
+#exercise_mockup_c{
+	width: 100%;
+}
+#exercise_mockup_content{
+	padding-left: 30px;
+	width: 50%;
+	float: left;
+	height: 850px;
+}
+
+/*Project 1*/
+
+#project1_container { margin: auto;  }
+
+#project1_wrapper{
+	padding: 10px;
+	font-family: Trebuchet, serif; font-size: 20px;
+	margin: auto;
+	width: 800px;
+}
+
+/*Project 2*/
+#project2_container { margin: auto;  }
+
+#project2_wrapper{
+	padding: 10px;
+	font-family: Trebuchet, serif; font-size: 20px;
+	margin: auto;
+	width: 800px;
+}
+
+/*Make sure your page contains a valid doctype at the top*/
+#simplegallery1, #simplegallery2, #simplegallery3, #simplegallery4, #simplegallery5, #project2Gallery1, #project2Gallery2{ //CSS for Simple Gallery Example 1
+position: relative; /*keep this intact*/
+visibility: hidden; /*keep this intact*/
+border: 5px solid black;
+background: black;
+margin: auto;
+}
+
+#simplegallery1 .gallerydesctext, #simplegallery2 .gallerydesctext, #simplegallery3 .gallerydesctext, #simplegallery4 .gallerydesctext, #simplegallery5 .gallerydesctext{ //CSS for description DIV of Example 1 (if defined)
+text-align: left;
+font-size: 18px;
+padding: 2px 5px;
+}
+
+/*CONTENT STYLE*/
+
+.content{
+	padding-left: 30px;
+}
+
+.content_style {
+	padding: 10px;
+	
+/*	-moz-border-radius: 15px;
+	border-radius: 15px;*/
+
+/*	-moz-box-shadow: 5px 5px 5px #ccc;
+  	-webkit-box-shadow: 5px 5px 5px #ccc;
+  	box-shadow: 5px 5px 5px #ccc;*/	
+}
+.content_style:hover{
+/*	background: #FFCF00;*/
+	background: white;	
+	padding: 10px;
+
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	-moz-box-shadow: 5px 5px 5px #ccc;
+  	-webkit-box-shadow: 5px 5px 5px #ccc;
+  	box-shadow: 5px 5px 5px #ccc;	
+}
+
+.prototype_video{
+	margin-left: 50px;
+	margin-bottom:20px;
+	width: 500px;
+/*	padding-bottom: 5px;*/
+}

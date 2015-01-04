@@ -1,0 +1,124 @@
+<h<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Information Visualization of CDC Health Data</title>
+	<meta name="author" content="Ruby Zheng">
+	<!-- Date: 2012-07-12 -->
+	
+	<!-- LE STYLES -->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../../../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+		
+	<link href="../../../css/projects.css" rel="stylesheet" />	
+	
+	<!-- LE SCRIPT! -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+				
+	</head>
+	<div class='container-fluid'>
+		<div class="row-fluid">	
+			<div class="span3 proj-info">
+				<h1>Information Visualization of CDC Health Data</h1>
+				<ul class="skills">
+					<li><strong>Duration:</strong><span>1 Semester</span></li>
+					<li><strong>Team Size:</strong><span>4</span></li>
+					<li><strong>Contribution:</strong>
+						<span>
+							Data Collection<br />
+							Data Analysis<br />
+							User Analysis<br />
+							Information Visualization
+						</span>
+					</li>
+					<li><strong>Technology:</strong><span>Excel<br />Google Visualization API</span></li>
+					
+					<li><a href="../../../index.html">Return Home</a></li>
+										
+				</ul>							
+			</div>
+			
+			<div class="span9 proj-content">		
+				<header class="well" id="top"><h2>About the Project</h2></header>		
+				<section>
+					<p>This project focused on visualization on the <a href="http://www.cdc.gov/healthyyouth/yrbs/factsheets/obesity.htm">CDC public data of youth obesity from across 50 states</a>.</p>
+					<p>We feel youth obesity is an important and interesting issue to explore because it impacts many kids and parents in the country. By creating useful visualization, we wanted to help parents, school administrators and others to learn more about the school health programs.</p>	
+					
+					<p><em>Learn more...</em></p>
+					<ul>
+						<li><a href="#p1">Phase 1: Research</a></li>
+						<li><a href="#p2">Phase 2: Visualizations</a></li>	
+						<li><a href="#p3">Phase 3: Video DEMO</a></li>													
+					</ul>	
+				</section>
+									
+				<header class="well" id="p1"><a href="#top">Back to top</a><h2>Phase 1: Research</h2></header>		
+				<section>
+					<p><h3>Defining the Problem Space</h3></p>	
+					<p>CDC Division of Adolescent and School Health have made public data and statistics of child obesity. The data is currently available for all 50 US states spanning across 20 dimensions and 3 years (2007, 2005, and 2003).  But since the data is all in static PDF files (<a href="http://www.cdc.gov/healthyyouth/yrbs/pdf/us_obesity_combo.pdf">Example PDF</a>), it is difficult for health science researchers or other interested third parties to browse and explore the data.</p>	
+					<p><h3>Understanding Users</h3></p>	
+					<p>Our visualization system is built to support the following target audience: School board administrators, Professionals in State and Local Health Agencies, Health/nutrition researchers, Health Scientist, Health Education Professionals and Physical Education Professionals.</p>																
+				</section>
+								
+				<header class="well" id="p2"><a href="#top">Back to top</a><h2>Phase 2: Visualizations</h2></header>					
+				<section>
+					<p><h3>Fish Eye View</h3></p>	
+					<ul>
+						<li>The data in Excel is transformed into a color coded 
+							representation augmented with FishEye display. Each data 
+							is assigned a RGB color component.</li>
+							
+						<li>Data that varies from 0-25 have a high 'Blue'
+							component. Data that varies from 30-60 have a high
+							'Green' component and data that varies from 70-100
+							have a high 'Red' component.</li>
+						<li>The user now has the <strong>ability to find outliers and search for patterns in the dataset</strong>.  Further, we have the bar fill option, that displays the color coded information with the magnitude of the data as a bar column. This is useful in seeing at a glance the variation in magnitude of the data and the actual magnitude value.
+						</li>
+					</ul>
+					
+					<p><h3>Map View</h3></p>	
+					
+					<ul>
+						<li>Another view of our system is the Map View, an improvement and can be thought of as an extension on top of parallel coordinates.  The 20 dimensions are grouped via the student and school variables.</li>
+						<li>By leveraging the convenience of parallel coordinates
+						and improving it via separation of data from the
+						dimension, we believe we have <strong>a fun, easy, dynamic,
+						explorative and a browsable interactive map</strong>
+						for the CDC child obesity data.</li>
+						
+					</ul>	
+								
+					<p><h3>Scatter Plot Matrix View</h3></p>		
+					<ul>
+						<li>This provides an overview of correlation between all data in a given year.</li>
+						<li>The <strong>ability to explore distribution of large data-set via filters</strong>. </li>
+						<li>The user can hover on any single point on any cell in
+						the matrix. This point in RED gets reflected and
+						highlighted on every cell in the matrix.</li>
+						<li>The search box allows the user to enter a state name.
+						This applies a dynamic filter in real time across the
+						data and displays those states that satisfy the search
+						query.</li>
+					</ul>												
+				</section>
+				
+				<header class="well" id="p3"><a href="#top">Back to top</a><h2>Phase 3: Video DEMO</h2></header>	
+				<section>		
+					
+					<div class='video_container'>
+						<div>
+							<iframe width="640" height="510" src="http://www.youtube.com/embed/LBrljkFWzUg" frameborder="0" allowfullscreen></iframe>					
+							<h6>Video: DEMO for final application</h6>										
+						</div>
+					</div>
+										
+				</section>
+						
+			</div>	<!-- end container div -->		
+			<div id='footer'><div class='footer_text'></div></div>			
+		</div>	<!-- end wrapper div -->
+	</body>
+</html>

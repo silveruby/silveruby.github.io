@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Mockup</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Ruby Zheng">
+	<!-- Date: 2012-02-14 -->
+	
+	<!-- CSS files -->	
+
+</head>
+<body>
+	<div id="container">
+		<div id="arrow">	
+		</div> <!-- end Arrow -->
+		<div id="fixed">	
+		</div> <!-- end Content -->
+		<div id="content">	
+			<canvas id="iCanvas" resize></canvas>
+		</div> <!-- end Content -->
+	</div> <!-- end Container -->
+
+	
+	<!-- Javascript files -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	
+	<!-- Load the Paper.js library -->
+	<script type="text/javascript" src="js/paper.js"></script>
+	<script type="text/paperscript" canvas="iCanvas">
+		
+		// Make a circle
+		var circle1 = new Path.Circle(new Point(100, 100), 99);
+		circle1.fillColor = '#666666';
+		
+		// Make another cirle on top of circle
+		var circle2 = new Path.Circle(new Point(100, 100), 78);
+		circle2.fillColor = '#999999';
+		
+		// Make another cirle on top of circles
+		var circle2 = new Path.Circle(new Point(100, 100), 57);
+		circle2.fillColor = '#FFFFFF';
+		
+	</script>
+	
+	<style>
+		body { margin: 0; border: 0; padding: 0; background-color: #888; width: 100%; }
+		#container { margin: auto; border: 0; padding: 0; position: relative; background-color: #FFF; width: 1024px; height: 1068px; overflow: hidden; }
+		#fixed { margin: auto; border: 0; padding: 0; background-image: url("./home-v5-bg.png"); width: 1024px; height: 1068px; z-index: 5; position: absolute; top: 0; left: 0; }
+		#content { margin: auto; border: 0; padding: 0; background-image: url("./home-v5-top.png"); width: 4096px; height: 768px; z-index: 2; position: absolute; top: 0; left: 0;}
+		#iCanvas { position: absolute; top: 284px; left: 428px; }
+	</style>
+	<script>
+		
+		document.onkeydown = function(e){
+			e = e? e:typeof event!='undefined'?event:null;
+			
+			if(!e) return 0;
+			else if (e.keyCode == "39") // slide right
+			{
+				// get current x position
+				var pos = $("#content").position().left;
+				var newPos = (pos == -3072)? 0 : pos - 1024;
+				console.log(newPos);
+				
+				// move 1024px to the right
+				$("#content").animate({"left": newPos + "px"}, "slow");
+				
+			}
+			else if (e.keyCode == "37") // slide left
+			{
+				// get current x position
+				var pos = $("#content").position().left;
+				var newPos = (pos == 0)? -3072 : pos + 1024;
+				console.log(newPos);
+				
+				// move 1024px to the right
+				$("#content").animate({"left": newPos + "px"}, "slow");
+				
+			}
+		}
+	</script>
+		
+</body>
+</html>

@@ -1,0 +1,40 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 208.32 216">
+
+	<script type="text/ecmascript" xlink:href="../smil.js"/>
+
+<g id="Background_xA0_Image_1_">
+	
+		<image overflow="visible" width="868" height="900" id="Background_xA0_Image" xlink:href="AA7F72C0.png"  transform="matrix(0.24 0 0 0.24 0 0)">
+	</image>
+</g>
+<g id="Ball_Left_xA0_Image_1_">
+	
+		<image overflow="visible" width="49" height="53" id="Ball_Left_xA0_Image" xlink:href="AA7F72C1.png"  transform="matrix(0.24 0 0 0.24 1.2002 54.2402)">
+	</image>
+</g>
+<g id="Ball_Middle_xA0_Image_1_">
+	
+		<image overflow="visible" width="49" height="45" id="Ball_Middle_xA0_Image" xlink:href="AA7F72C7.png"  transform="matrix(0.24 0 0 0.24 159.3604 40.3198)">
+	</image>
+</g>
+<g id="Hand_Left_xA0_Image_1_">
+	
+		<image overflow="visible" width="32" height="28" id="Hand_Left_xA0_Image" xlink:href="AA7F72C2.png"  transform="matrix(0.24 0 0 0.24 1.4399 62.6401)">
+	</image>
+</g>
+<g id="Ball_Right_xA0_Image_1_">
+	
+		<image overflow="visible" width="56" height="53" id="Ball_Right_xA0_Image" xlink:href="AA7F72C3.png"  transform="matrix(0.24 0 0 0.24 185.04 54.48)">
+	</image>
+</g>
+<g id="Hand_Right_xA0_Image_1_">
+	
+		<image overflow="visible" width="37" height="32" id="Hand_Right_xA0_Image" xlink:href="AA7F72CE.png"  transform="matrix(0.24 0 0 0.24 189.6006 59.7598)">
+	</image>
+</g>
+
+<path id="applePath" fill="#FFFFFF" stroke="#000000"
+ d="M165,45 L165,17 Z"/>
+
+</svg>

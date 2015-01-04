@@ -1,0 +1,99 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: black;
+}
+
+#wrapper {
+	height: 100%;
+	width: 800px;
+	margin: auto;
+	background: white;
+	padding: 20px;
+	font-family: helvetica, verdana, sans-serif;
+}
+
+#historyPath {
+	margin: auto;
+	padding: 10px;
+	font-size: 20px;	
+}
+
+#historyPath a {
+	font-size: 34px;
+	text-decoration: none;
+	color: black;
+}
+
+#historyPath a:hover {
+	text-decoration: underline; 
+	color: blue;
+}
+
+#currentOption {
+	border: 1px solid black;
+	text-align: center;
+	padding: 8px;
+}
+
+#currentOption ul, #currentOption li{
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#currentOption a:hover {
+	border-bottom-style: dotted;
+	border-width:5px;
+}
+
+#videoAndLyrics {
+	height: 320px;
+	width: 100%;
+	margin: auto;
+}
+
+#videoBoxWrapper {
+	display: inline;
+	padding-top: 10px;
+	float: left;
+	width: 480px;
+	margin: auto;
+}
+
+#videoInfoWrapper {
+	padding: 10px;
+	float: right;
+	width: 300px;
+	margin: auto;
+	font-size: 14px;
+}
+
+#karaokeWraper {
+	border: 1px solid black;
+	width: 100%;
+	height: 50px;	
+}
+
+#karaokeBox{
+	padding-left: 10px;
+	display: inline;
+	float: left;
+	width: 660px;
+	height: 50px;	
+	font-size: 20px;
+}
+
+#karaokeOption{
+	background: black;
+	float: right;
+	width: 120px;
+	height: 50px;	
+	text-align: center;
+}
+
+#karaokeOption a {
+	color: white;
+	font-size: 20px;	
+}

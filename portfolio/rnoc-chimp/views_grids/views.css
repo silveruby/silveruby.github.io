@@ -1,0 +1,55 @@
+.icon{
+	width: 90px;
+	height: 90px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.small{
+	width: 320px;
+	height: 180px;	
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.regular{
+	width: 320px;
+	height: 450px;	
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.ticker{
+	width: 1280px;
+	height: 90px;	
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.full{
+	width: 1280px;
+	height: 720px;	
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+

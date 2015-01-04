@@ -1,0 +1,21 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+     width="100%" height="100%" viewBox="0 0 307.2 172.8" onclick="sendDetails( evt )">	
+	 
+	
+	<script type="text/ecmascript" xlink:href="../smil.js"/>
+	<script type="text/ecmascript">
+	function sendDetails(evt) {
+		parent.svgClicked(evt);
+	}
+	</script>
+	
+	<image overflow="visible" width="307.2" height="172.8" id="adam" xlink:href="michelangelo-background.png"/>	
+	<image overflow="visible" width="143.76" height="91.2" id="god" xlink:href="michelangelo-god.png"  transform="translate(210, -7)">
+	
+		<animateTransform begin="click" attributeName="transform" type="translate" to="162, 1" dur="1s" fill="freeze"/>
+		<animateTransform begin="adam.click" attributeName="transform" type="translate" to="210, -7" dur="1s" fill="freeze"/>
+	</image>
+	
+	<rect x="306" y="0" width="100" height="172.8" fill="white" />
+	
+</svg>

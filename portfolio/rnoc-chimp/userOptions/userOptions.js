@@ -1,0 +1,153 @@
+											
+function init(){
+	
+	var panels = new Array(
+		{id: 'store_panel', name: 'Store'},		
+		{id: 'myWidgets_panel', name: 'My Widgets'},
+		{id: 'theme_panel', name: 'Themes'},
+		{id: 'setting_panel', name: 'Settings'}
+	);
+	
+	getStoreList();
+	getMyList();
+	
+	createTabs(panels);
+	
+	createStorePanel();	
+	createMyPanel();
+	createThemePanel();
+	createSettingPanel();
+	
+	activateJQuery();
+	
+	alert("Please use the Arrow Keys to navigate, 'g' Key for OK and 'v' Key for BACK.")
+
+}
+
+function activateJQuery() {
+	$("button").button();
+}
+
+$(document).ready(function(){  
+	/* add code that will be called before init() is called
+	 */
+//	init();
+});			
+
+
+/** SETTING PANEL **/
+
+function createSettingPanel(){
+	$("<div class='ui-state-active' id='setting_border'></div>").appendTo('#setting_panel');
+	$("<div class='setting_container' id='setting_profile'></div>").appendTo('#setting_panel');
+	$("<div class='setting_container' id='setting_personal'></div>").appendTo('#setting_panel');
+
+	$("<div id='setting_profile_header'>Profile</div><div id='setting_profile_info'></div>").appendTo('#setting_profile');
+	$("<div id='setting_personal_header'>Personal Settings<div id='setting_personal_edit' class='btn btnGreen ui-corner-all'><a href='#'>Edit</a><span></span></div></div><div id='setting_personal_info'></div>").appendTo('#setting_personal');
+	
+	/** Profile Info **/
+	$("<div id='setting_profile_icon' class='ui-corner-all'>Icon</div>").appendTo('#setting_profile_info');	
+	$("<div id='setting_profile_name' class='setting_style'>Ruby</div>").appendTo('#setting_profile_info');	
+	$("<div id='setting_profile_gender' class='setting_style'>Female</div>").appendTo('#setting_profile_info');	
+	$("<div id='setting_profile_location' class='setting_style'>Atlanta, GA</div>").appendTo('#setting_profile_info');	
+	
+	/** Personal Settings Info **/
+	$("<div id='setting_personal_info_security' class='setting_style'><strong>ID Token</strong>: <div id='id_token_textbox'></div></div>").appendTo('#setting_personal_info');	
+	$("<div id='setting_personal_info_email' class='setting_style'><strong>Email</strong>: rubyz@gatech.edu</div>").appendTo('#setting_personal_info');	
+	$("<div id='setting_personal_info_payment' class='setting_style'><strong>Payment Method</strong>: Visa</div>").appendTo('#setting_personal_info');	
+
+    var appendElementId = "id_token_textbox";
+    var max = 20;
+	var size = 25;
+	var cssClassString = "";
+    var value = "Enter Your ID Token";
+    var id = "id_token";
+	/* create the array */
+	var textBox = new Array({id: id, value: value, appendElementId:appendElementId, cssClassString:cssClassString, max:max, size:size});
+	createTextBoxElement(textBox);		
+}
+
+function showCategoryInfo(id, showInfoTo){
+
+	//$(showInfoTo).empty();
+	var html = "";
+
+	if(id == 'start'){
+		html = "";		
+	}
+	else {
+		var widgets = $("#" + id).parent().find('li.widget_menu');
+		html = html + "<div class='category_header'>Available Widgets: </div>";
+		if(widgets.length == 0 || widgets == undefined){
+			html = html + "<div class='category_image'>N/A</div>";
+		}
+		for(var i = 0; i < widgets.length; i++){
+		html = html + "<div class='category_image'>" + widgets[i].childNodes[0].text + "</div>";
+		}
+	}
+
+	$(showInfoTo).html(html);	
+}
+
+function hideCategoryInfo(showInfoTo){
+	$(showInfoTo).empty();	
+}
+
+function showWidgetInfo(item, showInfoTo){
+        var title = $("#" + item)[0].text;
+	if(showInfoTo == '#store_widget'){
+		for(cate in storeList){
+			if(storeList[cate].widgets.length > 0){
+				for(wid in storeList[cate].widgets){
+					if(storeList[cate].widgets[wid].title == title){
+						$(showInfoTo).empty();	
+						var html = "<div id='store_widget_wrap'></div>";		
+						$(showInfoTo).html(html);
+						$("<div id='store_widget_image'><img src='./images/" + storeList[cate].widgets[wid].name + "_preview.png'></div><div id='store_widget_info'></div>").appendTo('#store_widget_wrap');
+						$("<div id='store_widget_title'>" + storeList[cate].widgets[wid].title + "</div>").appendTo('#store_widget_info');
+						$("<div id='store_widget_price'>" + storeList[cate].widgets[wid].price + "</div>").appendTo('#store_widget_info');
+						$("<div id='store_widget_update' class='store_widget_style'><strong>Last Updated: </strong>" + storeList[cate].widgets[wid].update + "</div>").appendTo('#store_widget_info');
+						$("<div id='store_widget_version' class='store_widget_style'><strong>Current Version: </strong>" + storeList[cate].widgets[wid].version + "</div>").appendTo('#store_widget_info');
+						$("<div id='store_widget_description' class='store_widget_style'><strong>Description: </strong>" + storeList[cate].widgets[wid].description + "</div>").appendTo('#store_widget_info');
+						$("<div id='store_widget_developer' class='store_widget_style'><strong>Developer: </strong>" + storeList[cate].widgets[wid].developer + "</div>").appendTo('#store_widget_info');
+						$("<div id='store_widget_contact' class='store_widget_style'><strong>Contact: </strong>" + storeList[cate].widgets[wid].contact + "</div>").appendTo('#store_widget_info');						
+																																					
+						$('#store_widget_image').addClass('ui-corner-all');	
+						return true;				
+					}
+				}		
+			}	
+		}
+	}
+	else if(showInfoTo == '#myWidgets_widget') { // My Widgets Tab
+		for(cate in myWidgetList){
+			if(myWidgetList[cate].widgets.length > 0){
+				for(wid in myWidgetList[cate].widgets){
+					if(myWidgetList[cate].widgets[wid].title == title){
+                                                $(showInfoTo).empty();
+						var html = "<div id='myWidgets_widget_wrap'></div>";		
+						$(showInfoTo).html(html);						
+						$("<div id='myWidgets_widget_image'><img src='./images/" + myWidgetList[cate].widgets[wid].name + "_preview.png'></div><div id='myWidgets_widget_info'></div>").appendTo('#myWidgets_widget_wrap');
+						$("<div id='myWidgets_widget_title'>" + myWidgetList[cate].widgets[wid].title + "</div>").appendTo('#myWidgets_widget_info');
+						$("<div id='myWidgets_widget_state'>" + "Currently Enabled" + "</div>").appendTo('#myWidgets_widget_info');
+						$("<div id='myWidgets_widget_update' class='myWidgets_widget_style'><strong>Last Updated: </strong>" + myWidgetList[cate].widgets[wid].update + "</div>").appendTo('#myWidgets_widget_info');
+						$("<div id='myWidgets_widget_version' class='myWidgets_widget_style'><strong>Current Version: </strong>" + myWidgetList[cate].widgets[wid].version + "</div>").appendTo('#myWidgets_widget_info');
+						$("<div id='myWidgets_widget_description' class='myWidgets_widget_style'><strong>Description: </strong>" + myWidgetList[cate].widgets[wid].description + "</div>").appendTo('#myWidgets_widget_info');
+						$("<div id='myWidgets_widget_developer' class='myWidgets_widget_style'><strong>Developer: </strong>" + myWidgetList[cate].widgets[wid].developer + "</div>").appendTo('#myWidgets_widget_info');
+						$("<div id='myWidgets_widget_contact' class='myWidgets_widget_style'><strong>Contact: </strong>" + myWidgetList[cate].widgets[wid].contact + "</div>").appendTo('#myWidgets_widget_info');	
+																																											
+						$('#myWidgets_widget_image').addClass('ui-corner-all');
+						return true;
+					}
+				}		
+			}	
+		}		
+	}
+	else {
+		return false;
+	}
+}
+
+function hidewWidgetInfo(showInfoTo){
+	$(showInfoTo).empty();
+}

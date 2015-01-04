@@ -1,0 +1,183 @@
+var storeList = new Array(
+							{category: 'Entertainment', widgets: new Array()},
+							{category: 'News and Weather', widgets: new Array()},
+							{category: 'Shopping', widgets: new Array()},
+							{category: 'Show Apps', widgets: new Array()},
+							{category: 'Social', widgets: new Array()},
+							{category: 'Sports', widgets: new Array()}
+);
+
+/*
+ * the ajax call to get the store widgets
+ * this calls the function fillAppStoreWidgetList on success
+ */
+
+function getStoreList(){
+    var url = getPath() + "appStore.xml";
+	$.ajax( {
+		url : url,
+		dataType : 'xml',
+		success : function(result) {
+			console.log("result of app store=" + result);
+			getStoreListCallback(result);
+		},
+		async : false 
+	});
+}
+
+/*
+ * It retrieves the XML file received from the server This function strips of
+ * the App Store Widgets information and converts them into HTML Each widget is
+ * inside a <div> element with the image and span text inside it
+ */
+function getStoreListCallback(storeListXML){ // callback function of getStoreWidgets
+
+	var p = top.getPlatform();
+	attribs = "";
+
+	var widgetsArray = new Array();
+	var i = 0;
+
+	$(storeListXML).find("widget").each(function() {
+		var widget = $(this);
+		var description = widget.find("description").text();
+		var name = widget.find("name").text();
+		var view = widget.find("view").text();
+		var title = widget.find("title").text();
+		var version = widget.find("version").text();
+		var icon = '../' + name + '/' + widget.find("icon").text();
+		var category = widget.find("category").text();
+
+		 widgetsArray.push({name : name, 
+		 						title : title, 
+		 						update : '10/08/2010',
+		 						version : version,
+		 						size : 'unknown',
+		 						price : '$1.99', 
+		 						category : category,
+		 						description : description,
+		 						image : 'image.png',
+		 						icon : icon,
+		 						developer : 'GT-RNOC',
+		 						contact : 'http://www.rnoc.gatech.edu',
+		 						isInstalled : 'true',
+		 						divId : "app_" + i + "_" + name
+		 					});
+		
+		
+	}); // end getting WidgetsArray
+
+		// convert WidgetArray into StoreList (match category)
+		for(w in widgetsArray){
+			for(s in storeList){
+				if(storeList[s].category == widgetsArray[w].category){
+                                    storeList[s].widgets.push(widgetsArray[w]);
+                                    break;
+				}
+			}
+		}
+		
+		console.log("END GET STORE LIST");
+}
+
+function createStorePanel(){	
+
+        console.log("create Store Panel");
+	// DEFINE MY WIDGET LIST AND WIDGET OPTIONS CONTAINERS
+	var html = "<div id='store_border' class='ui-state-active'></div>";
+	html = html + "<div id='store_list' class='store_container' ></div>";
+	html = html + "<div id='store_widget' class='store_container'></div>";
+	$('#store_panel').html(html);
+		
+	//showCategoryInfo("start", "#store_widget");
+	createStoreWidgets();
+}
+
+function createStoreWidgets(){
+	// Populating #store_list
+
+	console.log("CREATE STORE WIDGETS");
+	
+	var html = "<div id='store-wrap' class='hidden'></div>";
+	html = html + "<div id='store-demo' class='hidden'><ul>";
+
+	for(cate in storeList){
+		html = html + "<li>";
+		html = html + "<a href='#' id='store_" + storeList[cate].category + "'>" + storeList[cate].category + "</a>";		
+		console.log(storeList[cate].category);
+                if(storeList[cate].widgets.length > 0){
+			html = html + "<ul>";
+			for(wid in storeList[cate].widgets){
+				html = html + "<li>";
+				html = html + "<a href='#'>" + storeList[cate].widgets[wid].title + "</a>";
+				html = html + getStoreWidgetDetail(storeList[cate].widgets[wid].name);				
+				html = html + "</li>";
+			}
+			html = html + "</ul>";			
+		}
+		else{
+			html = html + "<ul><li><a href='#'>N/A</a></li></ul>";
+		}
+		html = html + "</li>";		
+	}
+
+	html = html + "</ul></div>";	
+
+	$('#store_list').html(html);
+	
+	$('#store-wrap').menu({
+		content: $('#store-demo').html(),
+		backLink: false,
+		width: 350,
+		maxHeight: 500,
+		appendTo: '#store_list',	
+		showInfoTo: '#store_widget',
+                idCount: 0,
+                id: 'store'
+	});	
+}
+function getStoreWidgetDetail(widgetName){
+		
+	console.log("GET STORE WIDGET DETAIL");
+	
+	var isNotPurchased = true;
+	
+    for(m in myWidgetList){
+        for(w in myWidgetList[m].widgets){
+            if(myWidgetList[m].widgets[w].name == widgetName){
+				isNotPurchased = false;
+				break;
+			}
+        }        
+    }
+	
+	var html = ""; 
+	
+	html = "<ul>";
+	html = html + "<li>";
+	if(isNotPurchased){
+		html = html + "<a href='#' onClick='purchaseWidget()'>Purchase</a>";
+	}
+	else{
+		html = html + "<a href='#' style='color:gray; background:none'>Installed</a>";		
+	}
+	
+	html = html + "</li>";	
+	html = html + "</ul>";
+	
+	return html; 
+}
+
+
+function purchaseWidget(){    
+
+    	// update front/back end on MY WIDGETS - call addWidgetToMyWidgets() function from myWidgets.js
+    	addWidgetToMyWidgets();
+
+	// update front end UI/display on STORE WIDGET: change Purchase to Installed	
+	var widget = document.getElementById(activeElementId);
+	widget.innerHTML = "Installed";
+	widget.onclick = undefined;
+	widget.style.color = "gray";
+	widget.style.background = "none";
+}

@@ -1,0 +1,150 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #79BD9A;
+}
+
+#Wrapper {
+	height: 100%;
+	width: 800px;
+	margin: auto;
+	background: white;
+	padding: 20px;
+	font-family: helvetica, verdana, sans-serif;
+}
+
+#HeaderBar {
+	margin: auto;
+	padding: 10px;	
+	display: block;
+	height: 50px;
+}
+
+#HeaderBar #Title {
+	float: left;
+	font-size: 44px;	
+}
+
+#HeaderBar #Title a {
+	text-decoration: none;
+	color: #FF4E50;
+}
+
+#HeaderBar #Title a:hover {
+	text-decoration: none; 
+	color: #FC913A;
+}
+
+#HeaderBar #Help{
+	float: right;
+	font-size: 14px;
+/*	border: 1px solid #FC913A;	*/
+	padding-left: 5px;
+	padding-right: 5px;	
+/*	background: #EDE574;*/
+}
+
+#HeaderBar #Help a {
+	text-decoration: none;
+	color: #FF4E50;
+}
+
+#HeaderBar #Help a:hover {
+	text-decoration: none; 
+	color: #FC913A;
+}
+#MainContainer {
+	margin: auto;
+	padding: 10px;
+}
+
+#MainSearch{
+	margin: auto;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;	
+	margin-top: 100px;	
+	width: 300px;
+/*	border: 1px solid #F9D423;*/
+	color: white;
+	background: #FF4E50;
+
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	-moz-box-shadow: 5px 5px 5px #ccc;
+  	-webkit-box-shadow: 5px 5px 5px #ccc;
+  	box-shadow: 5px 5px 5px #ccc;	
+}
+
+#MainSearch #MainForm{
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	margin: auto;
+	width: 210px;
+}
+
+#MainSearch #ActionTerms{
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#ResultsBar {	
+		
+	border: 1px solid #79BD9A;
+	text-align: center;
+	padding: 8px;
+	
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	-moz-box-shadow: 5px 5px 5px #ccc;
+  	-webkit-box-shadow: 5px 5px 5px #ccc;
+  	box-shadow: 5px 5px 5px #ccc;	
+}
+
+#ResultsBar ul, #ResultsBar li{
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#ResultsBar a:hover {
+	border-bottom-style: dotted;
+	border-width:5px;
+}
+
+#VideoBar {
+	margin-top:30px;
+}
+
+#videoBoxWrapper {
+	padding: 10px;	
+	display: inline;
+/*	margin-top: 30px;*/
+	float: left;
+	width: 480px;
+	margin: auto;
+}
+
+/*#videoBox {
+	float: right;
+	width: 300px;
+	margin: auto;
+	font-size: 14px;
+}
+*/
+#videoInfoWrapper {
+	padding: 10px;
+	float: right;
+	width: 250px;
+	margin: auto;
+	font-size: 14px;
+}

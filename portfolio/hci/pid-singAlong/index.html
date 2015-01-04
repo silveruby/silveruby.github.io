@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SingAlong!</title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+		
+	<script type="text/javascript" src="swfobject.js"></script> 
+	<script type="text/javascript" src="json2.js"></script>
+	<script type="text/javascript" src="./jquery-1.6.1.min.js"></script>	
+	<script type="text/javascript" src="./jquery-ui-1.8.13.custom/js/jquery-ui-1.8.13.custom.min.js"></script> 	
+	<script type="text/javascript" src="singalong.js"></script> 
+	
+</head>
+<body onload="init()">
+
+<div id = "wrapper">
+	<div id = "historyPath"><a href="index.html">SingAlong!</a>
+	</div> <!-- end of historyPath -->
+	<div id = "currentOption">
+		<form name="searchYT">
+		Search: <input type='text' name='searchQuery' />
+		<input type='button' name='searchButton' value='Search' 
+		onClick="createYouTubeGet(searchQuery.value)" />
+		</form>
+	</div> <!-- end of currentOption -->
+	<div id= "videoAndLyrics">
+	<div id = "videoBoxWrapper">
+		<div id = "videoBox">Loading...</div> <!-- end of videoBox -->
+	</div> <!-- end of videoBoxWrapper -->	
+	<div id = "videoInfoWrapper">
+		<div id="introduction">
+		<p>Welcome to SingAlong!</p>
+		<p>The goal of this site is to allow anyone to be able to sync any lyrics or text for existing YouTube video. No additional software is required. Just search for a video, copy 'n paste in lyrics and sync them! </p>
+		<p>You do not need to play around with lyrics offset time to sync the lyrics. Simply sync the lyrics by scrolling line by line in the bar bellow as the video plays. For example, when the line "You are my sunshine" is played in the video, click 'Next' to scroll to the next line.</p>
+		<p>Video Exampes: <a href="javascript: selectFromVideoId('k2ImztgAtiY')">Jay Chou - Qing Tian</a></p>
+		</div>
+		<div id="videoInfo" style="display: none">
+		<p id="videoName"></p>
+		<p id="videoElapsed" style="display: inline"></p>
+		<p id="videoDuration" style="display: inline"></p>
+		<p id="lyricsExist"></p>
+		<div id ="lyricsBoxForm" style="display: none">
+			<textarea id='lyricsBox' rows="8" cols="35" onClick="clearTextArea();" value=""></textarea><br>
+			<input type='button' id='lyricsCreate' value='Sync Lyrics w/ Video' onClick="createLyrics()" />
+		</div>
+		</div>
+	</div> <!-- end of videoInfoWrapper -->
+	</div> <!-- end of videoAndLyrics -->	
+	<div id="karaokeWraper">
+			<div id="karaokeBox">&nbsp;</div>
+			<div id="karaokeOption">&nbsp;</div>
+	</div>
+</div> <!-- end of wrapper -->
+
+</body>
+</html>

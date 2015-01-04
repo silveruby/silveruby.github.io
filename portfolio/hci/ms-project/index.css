@@ -1,0 +1,26 @@
+#container { margin: auto;  }
+
+#wrapper{
+	padding: 10px;
+	font-family: arial, serif; font-size: 14px;
+	margin: auto;
+	width: 800px;
+}
+
+.content{
+	padding-left: 30px;
+}
+
+/*Make sure your page contains a valid doctype at the top*/
+#simplegallery1, #simplegallery2, #simplegallery3, #simplegallery4, #simplegallery5{ //CSS for Simple Gallery Example 1
+position: relative; /*keep this intact*/
+visibility: hidden; /*keep this intact*/
+border: 5px solid black;
+background: black;
+}
+
+#simplegallery1 .gallerydesctext, #simplegallery2 .gallerydesctext, #simplegallery3 .gallerydesctext, #simplegallery4 .gallerydesctext, #simplegallery5 .gallerydesctext{ //CSS for description DIV of Example 1 (if defined)
+text-align: left;
+font-size: 18px;
+padding: 2px 5px;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<user>
+	<widgetList> <!-- List of Widgets -->
+   
+        <widget>
+		<name>weather</name>
+		<title>Weather</title>
+		<price>FREE</price>
+		<description>Local Weather</description>
+		<version>1.0</version>
+		<icon>rss.png</icon>
+                <selected>true</selected>
+                <view>icon</view>
+                <category>News and Weather</category> <!-- Category of Widget -->
+                <developer>RNOC</developer> <!-- Developer of Widget -->
+                <contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->
+	</widget>
+	      		
+        <widget>
+		<name>gtnews</name>
+		<title>GT News</title>
+		<price>FREE</price>
+		<description>GT News !</description>
+		<version>1.0</version>
+		<icon>rss.png</icon>
+                <selected>true</selected>
+                <view>icon</view>
+                <category>News and Weather</category> <!-- Category of Widget -->
+                <developer>RNOC</developer> <!-- Developer of Widget -->
+                <contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->
+	</widget>
+
+        <widget>
+		<name>programprofile</name> <!-- Name of Widget -->
+		<title>Program Profile</title> <!-- Title to be displayed for Widget -->
+		<price>FREE</price>
+		<description>Login App for Facebook</description>
+		<version>1.0</version>
+		<icon>rss.png</icon>
+                <view>icon</view>
+                <selected>true</selected>
+                <category>Entertainment</category> <!-- Category of Widget -->
+                <developer>RNOC</developer> <!-- Developer of Widget -->
+                <contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->
+	</widget>
+	<widget>
+		<name>SocialApp</name> <!-- Name of Widget -->
+		<title>Facebook Social</title> <!-- Title to be displayed for Widget -->
+		<price>FREE</price>
+		<description>Login App for Facebook</description>
+		<version>1.0</version>
+		<icon>rss.png</icon>
+                <view>icon</view>
+                <selected>true</selected>
+                <category>Social</category> <!-- Category of Widget -->
+                <developer>RNOC</developer> <!-- Developer of Widget -->
+                <contact>rnoc at gatech.edu</contact> <!-- Category of Widget -->
+	</widget>
+
+</widgetList>
+    	
+		    	
+	<globalvalues> <!-- Global values -->
+		<zipcode>30318</zipcode> <!-- User Location -->
+		<email>gpburdell@gatech.edu</email> <!-- User Email (optional) -->
+	</globalvalues>
+</user>

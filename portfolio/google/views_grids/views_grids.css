@@ -1,0 +1,55 @@
+#view{
+	z-index:5;
+	opacity: 0.8;
+}
+
+.icon{	
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.small{	
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+  	text-align: center;
+}
+
+.regular{	
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+  	text-align: center;
+}
+
+.full{
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+  	text-align: center;
+}
+
+#viewInfo{
+	width: 500px;
+	height: 300px;
+	top: 150px;
+	left: 400px;
+	position: absolute;
+	opacity: 0.5;
+	text-align: center;
+}
+
+#keyInfo{
+	width: 500px;
+	height: 300px;
+	top: 450px;
+	left: 500px;
+	position: absolute;
+	font-size: 1.5em;
+	padding: 5px;
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Ruby Xin Zheng</title>			
+		<link href="index.css" rel="stylesheet" />	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />								
+		<!-- <script type="text/javascript" src="index.js"></script> -->
+		
+		<script src="../../simplegallery/jquery-1.2.6.pack.js"></script>
+
+		<script src="../../simplegallery/simplegallery.js"></script>
+		
+		<script>
+
+		/***********************************************
+		* Simple Controls Gallery- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+		* This notice MUST stay intact for legal use
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+		***********************************************/
+		
+		var mygallery=new simpleGallery({
+			wrapperid: "simplegallery1", //ID of main gallery container,
+			dimensions: [490, 615], //width/height of gallery in pixels. Should reflect dimensions of the images exactly
+			imagearray: [
+				["./interaction_gesture.png", "", "", "Gesture"],
+				["./interaction_tactile.png", "", "", "Tactile"]													
+			],
+			autoplay: [false, 2500, 2], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+			persist: false, //remember last viewed slide and recall within same session?
+			fadeduration: 500, //transition duration (milliseconds)
+			oninit:function(){ //event that fires when gallery has initialized/ ready to run
+				//Keyword "this": references current gallery instance (ie: try this.navigate("play/pause"))
+			},
+			onslide:function(curslide, i){ //event that fires after each slide is shown
+				//Keyword "this": references current gallery instance
+				//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+				//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+			}
+		})
+		
+		var mygallery=new simpleGallery({
+			wrapperid: "simplegallery2", //ID of main gallery container,
+			dimensions: [600, 479], //width/height of gallery in pixels. Should reflect dimensions of the images exactly
+			imagearray: [
+				["./prototype_home.png", "", "", "Home Screen"],
+				["./prototype_gesture.png", "", "", "Gesture Screen"],
+				["./prototype_tactile.png", "", "", "Tactile Screen"]													
+			],
+			autoplay: [false, 2500, 2], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+			persist: false, //remember last viewed slide and recall within same session?
+			fadeduration: 500, //transition duration (milliseconds)
+			oninit:function(){ //event that fires when gallery has initialized/ ready to run
+				//Keyword "this": references current gallery instance (ie: try this.navigate("play/pause"))
+			},
+			onslide:function(curslide, i){ //event that fires after each slide is shown
+				//Keyword "this": references current gallery instance
+				//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+				//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+			}
+		})
+
+		</script>
+				
+			
+	</head>
+	<body onload='init()'>
+		<div id='wrapper'>
+			<div id='header'>
+			</div> <!-- end header div -->
+			<div id='container'>
+				<div id='exercise' class='heading'><h1>Master's Project - Touchscreen For the Visually Impaired</h1></div>				
+				
+				<div id='phase_1h' class='heading'><h2>Phase 1: Research</h2></div>		
+				<div id='phase_1c' class='content'><div class='content_style'>
+					<h3>Research Question</h3>
+					<p>I decided to research about touchscreen for the visually impaired because I am interested in multimodal interactions as well as accessibility. </p>	
+					<p>Touchscreen accessibility for the visually impaired users is challenging because there is no tactile controls. From speaking with the visually impaired community, many enjoy objects that provide ample tactile control. Therefore, I wanted to know if users would prefer to use tactile control over the existing gesture control.</p>																
+				</div></div>
+				
+				<div id='phase_2h' class='heading'><h2>Phase 2: Study Design</h2></div>					
+				<div id='phase_2c' class='content'><div class='content_style'>
+					<h3>Creating the Study</h3>	
+					<ul>
+						<li>Performances Vs. Preferences</li>
+						<li>Qualitative &amp; Quantitative Data</li>
+						<li>Within-Subject Study On Hierarchical Menu</li>																						
+					</ul>
+										
+					<p>In order to compare two different types of control style, I had to figure out a way to create a solid study. The study should be designed in such way that it would allow me to collect both quantitative and qualitative data about user preferences and performances.</p>
+					<p>I decided to create a study where the users have to navigate through a hierarchical menu. The user have to navigate through a hierarchical menu to search for target items. The study was within-subject so that a user needed to navigate the menu using both conditions: gesture and tactile. Through this, I collected user's performance through task completion time as well as their subjective preferences through questionnaires.</p>
+					<h3>Designing the Interactions</h3>	
+					<p>Below are images of interactions for each condition. I created these using Omnigraffle. </p>				
+					<div id='simplegallery1'></div>												
+				</div></div>
+				
+				<div id='phase_3h' class='heading'><h2>Phase 3: Prototype</h2></div>		
+				<div id='phase_3c' class='content'><div class='content_style'>
+					<h3>Creating the Hierarchal Menu</h3>						
+					<p>The hierarchical menu is a simple shopping category that is modeled after popular commerce website including Wal-Mart/Amazon.</p>					
+					<h3>Implementing on iPad</h3>						
+					<p>I decided to implement the prototype on iPad because it has very good API for gestures and multitouch. For this part, I learned Objective-C (I had a little experience previously but never implemented a full prototype). Although Apple's documentation was moderately helpful, I found a lot of good online tutorials that helped me with the implementation.</p>			
+					<div id='simplegallery2'></div>
+				</div></div>
+				
+				<div id='phase_4h' class='heading'><h2>Phase 4: Evaluation</h2></div>	
+				<div id='phase_4c' class='content'><div class='content_style'>
+					<h3>Calculating the Quantitative Data</h3>
+					<ul>
+						<li>Six Participants, 1hr Each</li>
+						<li>Average Time: Gesture-42.25s, Tactile-47.19s</li>
+						<li>Learning Curve Between 1st and 2nd Condition</li>																						
+					</ul>										
+					<p>I went through the study with six participants from the Center for Visually Impaired at Atlanta. They range from age 20s-50s. On average, there is a ~+20% learning curve between 1st and 2nd condition. Four successfully complete the entire study. The Average completion time from the participants were 42.25s for gesture and 47.19s for tactile. </p>
+					<h3>Analyzing the Qualitative Data</h3>
+					<ul>
+						<li>Participants With Diabetes</li>
+						<li>Problem with Tactile Control</li>
+						<li>Difficulty in Learning the Hierarchical Menu</li>																						
+					</ul>					
+					<p>Most users preferred the gesture control. One told me after the study that he is more comfortable with gesture because he has problem with the tactile control. It turned out that this participant had diabetes and one of the symptoms is losing sense of touch.</p>
+					<p>Through this study, I conclude that although tactile control can be helpful for visually impaired users for many tasks, gesture control is actually more powerful for them to use touchscreen.</p>							
+					<img src="./user_preferences.png" alt='User Perferences' />
+					<h3>Providing Guidelines</h3>							
+						<ul>
+							<li>Physical buttons should be for quick tasks/shortcuts</li>
+							<li>Physical buttons should be small and easy to find</li>
+							<li>Gestures provide quick navigation</li>
+							<li>Better to remember different gestures than spent time looking for physical (tactile) buttons</li>
+							<li>Combination should be the best</li>
+						</ul>
+	
+				</div></div>
+
+			</div>	<!-- end container div -->		
+			<div id='footer'><div class='footer_text'></div></div>			
+		</div>	<!-- end wrapper div -->
+	</body>
+</html>

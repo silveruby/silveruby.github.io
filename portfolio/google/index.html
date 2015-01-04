@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Design Exercise : Google Cafes</title>			
+		<link type="text/css" href="index.css" rel="stylesheet" />					
+		<script type="text/javascript" src="../../simplegallery/jquery-1.2.6.pack.js"></script>
+
+		<script type="text/javascript" src="../../simplegallery/simplegallery.js">
+
+		/***********************************************
+		* Simple Controls Gallery- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+		* This notice MUST stay intact for legal use
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+		***********************************************/
+
+		</script>
+			
+		<script type="text/javascript">
+			var mygallery=new simpleGallery({
+				wrapperid: "wireframe", //ID of main gallery container,
+				dimensions: [303, 582], //width/height of gallery in pixels. Should reflect dimensions of the images exactly
+				imagearray: [
+					["./wireframe-menu.png", "", "", "Menu"],
+					["./wireframe-nearby.png", "", "", "Nearby"],
+					["./wireframe-friends.png", "", "", "Friends"],
+					["./wireframe-history.png", "", "", "History"],
+					["./wireframe-lucky.png", "", "", "Lucky"]												
+				],
+				autoplay: [false, 2500, 2], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+				persist: false, //remember last viewed slide and recall within same session?
+				fadeduration: 500, //transition duration (milliseconds)
+				oninit:function(){ //event that fires when gallery has initialized/ ready to run
+					//Keyword "this": references current gallery instance (ie: try this.navigate("play/pause"))
+				},
+				onslide:function(curslide, i){ //event that fires after each slide is shown
+					//Keyword "this": references current gallery instance
+					//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+					//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+				}
+			})
+			var mygallery=new simpleGallery({
+				wrapperid: "mockup", //ID of main gallery container,
+				dimensions: [303, 582], //width/height of gallery in pixels. Should reflect dimensions of the images exactly
+				imagearray: [
+					["./mockup-menu.png", "", "", "Menu"],
+					["./mockup-menu2.png", "", "", "Menu2"],
+					["./mockup-webcam.png", "", "", "WebCam"]											
+				],
+				autoplay: [false, 2500, 2], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+				persist: false, //remember last viewed slide and recall within same session?
+				fadeduration: 500, //transition duration (milliseconds)
+				oninit:function(){ //event that fires when gallery has initialized/ ready to run
+					//Keyword "this": references current gallery instance (ie: try this.navigate("play/pause"))
+				},
+				onslide:function(curslide, i){ //event that fires after each slide is shown
+					//Keyword "this": references current gallery instance
+					//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+					//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+				}
+			})			
+		</script>
+	</head>
+	<body>
+		<div id='wrapper'>
+			<div id='header'>
+			</div> <!-- end header div -->
+			<div id='container'>
+			
+				<div id='exercise' class='heading'><h1>Design Exercise: Google Cafes</h1></div>		
+				<div id='process_c' class='content'><div class='content_style'>
+					<p>Ruby Xin Zheng - MS HCI at Georgia Institute of Technology</p>
+					<p><a href ="#process">Process</a> | <a href="#wireframe">Wireframe</a> | <a href="#mockup">Mockup</a> </p>					
+				</div></div>
+		
+				<div id='process_h' class='heading'><h2><a name='process'>User-Centered Design</a></h2></div>		
+				<div id='process_c' class='content'><div class='content_style'>
+					<p>For this design exercise, I would like to use the User-Center Design (UCD) approach. I think understanding the users and designing for their needs should be primary focus and UCD is the best way to accomplish these goals. There are many variations on UCD and for this particular design exercise, I decided to break the schedule into the following five phases: research, concept, implementation, evaluation and finally product release. </p>
+				</div></div>
+				
+				<div id='phase_1h' class='heading'><h3>Phase 1: Research (2 weeks)</h3></div>		
+				<div id='phase_1c' class='content'><div class='content_style'>
+					<ul><li>Questionnaires</li>						
+					<li>Personas</li>					
+					<li>Scenarios</li>
+					<li>Requirement & Constraints</li>						
+					<li>Existing Systems</li></ul>			
+					<p>The first thing is to create a general questionnaire. This questionnaire can be a online survey asking about user eating preferences, needs and behaviors.</p>							
+					<p>Developing personas and scenarios are important steps to understanding the users. We can use the data from the questionnaire for both Persona and Scenarios. Next, defining the requirement & constraints of the system should be carried out as well. The goal is to find a good balance between user needs and system features.</p>		
+					<p>Analyzing existing systems will give designers good concepts and ideas of what are good and bad design choices. Especially if there are plethora of similar systems that are already popular with users.</p>																																																		
+				</div></div>
+
+				<div id='phase_2h' class='heading'><h3>Phase 2: Concept (3 weeks)</h3></div>		
+				<div id='phase_2c' class='content'><div class='content_style'>
+					<ul><li>Interaction</li>
+					<li>Wireframes</li>
+					<li>Three Design Concepts</li>		
+					<li>User Evaluation</li></ul>																	
+					<p>Defining interaction, creating multiple wireframes, and design alternatives will help to solidify important concepts.</p>
+					<p>I think at least three main design concepts for the system should be created. These three design concepts should be different from each other. The final design should be chosen, if possible, with the users involved. </p>										
+				</div></div>
+			
+				<div id='phase_3h' class='heading'><h3>Phase 3: Implementation (3 weeks)</h3></div>		
+				<div id='phase_3c' class='content'><div class='content_style'>
+					<ul><li>Final Design</li>
+					<li>Implementation</li></ul>
+					<p>Once a final design is selected, the team will need to work together to implement a functional system.</p>																
+				</div></div>
+			
+				<div id='phase_4h' class='heading'><h3>Phase 4: Evaluation (2 weeks)</h3></div>		
+				<div id='phase_4c' class='content'><div class='content_style'>
+					<ul><li>Usability Testing</li>						
+					<li>Iterative Design</li></ul>									
+					<p>When the system is complete, it should be release to a small group of users for two weeks to evaluate the system. This will help us find & fix bugs and usability issues.</p>												
+				</div></div>			
+							
+				<div id='phase_5h' class='heading'><h3>Phase 5: Launch (2 weeks)</h3></div>		
+				<div id='phase_5c' class='content'><div class='content_style'>		
+					<ul><li>Release</li></ul>	
+					<p>Have a final look at usability usability issues & bugs and then release of the system. Continue support of the system should continue as well even after three months.</p>											
+				</div></div>
+				
+				<div id='wireframe_h' class='heading'><h2><a name='wireframe'>Wireframes</a></h2></div>		
+				<div id='wireframe_c' class='content'>
+					<div id='wireframe'></div>
+					<div id='wireframe_content'><div class='content_style'>
+						<p>While a website is certainly necessary, I decided to focus on designing for a mobile phone interface. I feel that most users who will use this system should be comfortable with technology and would probably own mobile devices. A mobile application has three advantages over a website: personal privacy, quick on-the-go access and anywhere connectivity.  Users can use this application to not only choose a cafe, they could also connect and share cafe choice with friends through SMS and GPS tracking.</p> 
+						<p>I analyzed two existing systems, <a href='http://itunes.apple.com/us/app/urbanspoon/id284708449?mt=8' target="_blank">UrbanSpoon</a> and <a href='http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284910350&amp;mt=8' target="_blank">Yelp</a>, to come up with ideas and then created these wireframes.</p>
+						<ul>
+							<li><strong>Menu</strong> - Displays four options and a space for special events. </li>
+							<li><strong>Nearby</strong> - Shows all the cafes that are nearby.</li>
+							<li><strong>Friends</strong> - Provides updates on where friends are eating.</li>		
+							<li><strong>History</strong> - Shows past cafe visits. Also allow users to type in additional notes. </li>	
+							<li><strong>Feeling Lucky</strong> - Helps to decide where to eat. This is inspired by UrbanSpoon. I really liked this concept because it is very useful for people who wants to try something random. </li>										
+						 </ul>	
+					</div></div>		
+				</div>		
+
+								
+				<div id='mockup_h' class='heading'><h2><a name='mockup'>Mockups</a></h2></div>		
+				<div id='mockup_c' class='content'>
+					<div id='mockup'></div>
+					<div id='mockup_content'><div class='content_style'>
+						<p>I decided to mockup how information will be displayed for the each Cafe. First of all, for each cafe, there will be four main options located on the bottom of the screen. These options are Today's Menu, Webcam, Meet Up, and Check In. </p> 
+						<p>Today's Menu shows the menu (see mockup).</p> 
+						<p>Instead of figuring out a way to calculate how crowed the cafe is, I think it would be more useful to allow users to get a live webcam feed of the cafe (see mockup).</p> 
+						<p>Meet Up would allow users to notify their friends (from their Friends list)  about their lunch plans. I think we can incorporate Facebook, SMS and/or Twitter in this section. </p> 	
+						<p>When users finally figure out where they want to have lunch, they can Check In to add the cafe into history. </p> 
+						<p>Only some options are mocked up due to time constraint on this exercise.</p> 															
+						<ul>
+							<li><strong>Menu</strong> - Displays four options and a space for special events for Charlie's Cafe. </li>
+							<li><strong>Menu2</strong> - Shows a detail menu of NAMASTE for Charlie's Cafe.</li>
+							<li><strong>Webcam</strong> - Shows a life webcam feed of the cafe.</li>											
+						 </ul>	
+					</div></div>		
+				</div>
+													
+			</div>	<!-- end container div -->		
+			<div id='footer'><div class='footer_text'></div></div>			
+		</div>	<!-- end wrapper div -->
+	</body>
+</html>

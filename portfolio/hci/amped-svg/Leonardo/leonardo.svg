@@ -1,0 +1,18 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 609.6 643.68">
+
+	<script type="text/ecmascript" xlink:href="../smil.js"/>
+	<!-- <script type="text/ecmascript">
+	function sendDetails(evt) {
+		parent.svgClicked(evt);
+	}
+	</script> -->
+
+	<image overflow="visible" width="1270" height="1341" id="background" xlink:href="leonardo-background.png"  transform="matrix(0.48 0 0 0.48 0 0)" />
+
+	<image overflow="visible" width="1050" height="1063" id="square" xlink:href="leonardo-square.png"  transform="matrix(0.48 0 0 0.48 50.3999 119.52)" />
+
+	<image overflow="visible" width="479.04" height="487.2" id="circle" xlink:href="leonardo-circle.png" x="60.5" y="115.2">
+			<animateTransform begin="click; background.click" attributeName="transform" type="rotate" from="0,300,320" to="360,300,320" dur="3s" repeatCount="indefinite" fill="freeze" />	
+	</image>
+
+</svg>

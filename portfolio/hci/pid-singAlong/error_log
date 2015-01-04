@@ -1,0 +1,3 @@
+[31-May-2011 23:14:24] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (1) in /home/ictoan/public_html/rz/portfolio/pid-singAlong/file_exist.php on line 10
+[31-May-2011 23:14:35] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (1) in /home/ictoan/public_html/rz/portfolio/pid-singAlong/file_exist.php on line 10
+[01-Jun-2011 00:19:45] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ictoan/public_html/rz/portfolio/pid-singAlong/create_file.php on line 26

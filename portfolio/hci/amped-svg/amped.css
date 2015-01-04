@@ -1,0 +1,63 @@
+html, body{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: white;
+}
+
+.content {
+	margin: auto;
+	width: 650px;
+	background: white;
+	height: 100%;
+	
+}
+
+#svg {
+	width: 600px;	
+	margin-right: auto;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+/*@font-face {
+	font-family: "VeryChristmess";
+	font-style: normal;
+	font-weight: normal;
+	src: local("VeryChristmess"), url(VeryChristmess.ttf);
+}
+
+@font-face {
+	font-family: "Grantham Roman";
+	src: local("Grantham Roman"), url("Grantham Roman.ttf");
+}
+*/
+#header {
+	width: 600px;
+	margin: auto;
+	font-size: 2.5em;
+	
+	font-family: "Grantham Roman";
+	text-align: center;
+}
+
+#hint{
+	width: 600px;
+	margin: auto;
+	font-size: 1em;
+	
+	font-family: "Grantham Roman";
+	text-align: center;	
+}
+
+#text {
+	text-align: center;
+	margin: auto;
+	width: 600px;
+	font-family: "Grantham Roman";
+	/*text-align: center;*/
+	font-size: 2.0em;
+	
+}
+
+	

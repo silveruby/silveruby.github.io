@@ -7,8 +7,13 @@ layout: default
 	<h3 class="subtitle">{{ page.subtitle }}</h3>
 	<p class="date">{{ page.date | date_to_string }}</p>
 	{{ content }}
-	<p class="prev_next">
-		<span class="prev">&#x276e; Older Post</span>
-		<span class="next">Newer Post &#x276f;</span>
+	<p class="pagination">
+		{% if paginator.previous_page %}
+		<a href="{{ prev_post }}"><span class="prev">&#x276e; Older Post</span></a>
+		{% endif %}
+		
+		{% if paginator.next_page %}
+		<a href="{{ next_post }}"><span class="next">Newer Post &#x276f;</span></a>
+		{% endif %}
 	</p>
 </div>

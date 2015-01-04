@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" version="1.1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 208.32 216">
+	<script type="text/ecmascript" xlink:href="../smil.js" />
+	<!-- <script type="text/ecmascript">
+	function sendDetails(evt) {
+		parent.svgClicked(evt);
+	}
+	</script>	 -->
+<!--  x1="164.993" y1="45.167" x2="164.993" y2="16.833"  d="M9.12,62.64C19.66,36.5,48.66,18.5,48.66,18.5l43-6l35,3l32,5l21,11l9,16l0.94,12.26 -->
+	
+	<path id="applePath1" fill="#FFFFFF" stroke="#000000" d="M0,0 L0,-30 Z"/>
+	<path id="applePath2" fill="#FFFFFF" stroke="#000000" d="M0,0 L0,-25 Z"/>
+	<path id="applePath3" fill="#FFFFFF" stroke="#000000" d="M0,0 L0,-45 Z"/>
+			
+	<image  width="868" height="900" id="bg" xlink:href="raphael-bg.png" transform="matrix(0.24 0 0 0.24 0 0)"/>
+
+	<image  x="1.2" y="57" width="11.76" height="10.8" id="Ball_Left_xA0_Image" xlink:href="raphael-middle-ball.png">
+		<animateMotion begin="click; bg.click" dur="1.5s" repeatCount="indefinite" fill="freeze">
+			<mpath xlink:href="#applePath1" />
+		</animateMotion>	
+	</image>
+
+	<image  x="158" y="43" width="11.76" height="10.8" id="Ball_Middle_xA0_Image" xlink:href="raphael-middle-ball.png">
+		<animateMotion begin="click; bg.click" dur="1s" repeatCount="indefinite" fill="freeze">
+				<mpath xlink:href="#applePath2"/>
+		</animateMotion>
+	</image>
+	
+	<image   x="185" y="55" width="11.76" height="10.8" id="Ball_Right_xA0_Image" xlink:href="raphael-middle-ball.png">
+		<animateMotion begin="click; bg.click" dur="1.8s" repeatCount="indefinite" fill="freeze">
+			<mpath xlink:href="#applePath3" />
+		</animateMotion>	
+	</image>
+	
+	<image  width="32" height="28" id="Hand_Left_xA0_Image" xlink:href="raphael-left-hand.png" transform="matrix(0.24 0 0 0.24 1.4399 62.6401)"/>
+	<image  width="37" height="32" id="Hand_Right_xA0_Image" xlink:href="raphael-right-hand.png" transform="matrix(0.24 0 0 0.24 189.6006 59.7598)"/>
+</svg>

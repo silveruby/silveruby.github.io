@@ -1,0 +1,26 @@
+Cafeteria
+
+- Similar to university cafeterias 
+- 7 Cafes
+	- Charlie
+	- Slice
+	- No name
+	- Pacific
+	- American Table
+	- Cafe Mama
+	- Pintxo 47
+	
+- Menu Information
+	- Vegetarian / Vegan / Raw / Raw & Vegetarian / Raw & Vegan
+	- Hours of operation
+	- Daily Menu
+
+- How to connect
+
+- Yelp
+	- Bookmark support
+	
+- Menu
+- Map
+- Place
+- Random
