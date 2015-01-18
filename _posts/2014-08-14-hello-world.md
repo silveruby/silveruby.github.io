@@ -1,18 +1,18 @@
 ---
-
 layout: post
 title: Hello world!
 category: technology
 tags: jekyll blog
-
 ---
 
-Blogging has always been a way to help me organize my thoughts and share them with the world. The first time I blogged was back in 2001 using [Blogger](http://www.blogger.com). Since then, I've tried numerous blogging platforms such as [Xanga](http://xanga.com/), Pitas (now Diaryland), [LiveJournal](http://www.livejournal.com/), [WordPress](https://wordpress.com/) and [Tumblr](https://www.tumblr.com/). 
+Blogging has always been a helpful way for me to organize my thoughts. My first blog was created on [Blogger](http://www.blogger.com) in 2001. From then on, I've tried numerous blogging platforms such as [Xanga](http://xanga.com/), Pitas (now Diaryland), [LiveJournal](http://www.livejournal.com/), [WordPress](https://wordpress.com/), [Tumblr](https://www.tumblr.com/) and many more. In 2004, when I was about a year into college, I stopped blogging due to personal conflicts. One exception was that I did keep an online travel journal when I was studying abroad in Japan for 3 months - [rubyinjapan2006.wordpress.com](http://rubyinjapan2006.wordpress.com).
 
-I stopped blogging a year into college. Although I tried to pick it up a few times since then, it was hard for me to be consistent because of the rise of micro-blogging. I tried to get into micro-blogging using services such as [Twitter](https://twitter.com/) and [Facebook](https://facebook.com/), but this method never felt right. It is too curt and oftentimes mindless for me. So, after ditching the micro-blogging idea, I researched different blogging CMS and had analysis paralysis for years (and sadly, this is a common theme in my life). 
+For ten years, between 2004-2014, I tried many times to start blogging again, but somehow I was never happy with any of the blogging platforms and got caught up in the micro-blogging craze. I used Twitter, Tumblr, and even Facebook, but again, none of them really felt like the right tool for me. I felt all of them are too curt and oftentimes too mindless for me to use. Therefore, I ditched micro-blogging platforms after a few years and begun my search for a beautiful light-weight customizable CMS.
 
 The most common blogging CMS is WordPress. It is widely used by people and frankly, I have no fucking idea why. It is an over-bloated platform with way too many unnecessary features for simple blogging needs. I wanted something minimal that loads fast and easy to maintain; Wordpress satisfied neither. Over the years, I tested out a few other CMSs but never found the right now until I came across [Jeykll](http://jekyllrb.com/) when I was playing with Github Pages. 
 
 The light-weight static site generator provided exactly the simplicity and flexibility I needed. I really like Jekyll and feel this is the best way to blog. There are a lot of fantastic resources for Jekyll blogs. This [article on how to create a simple blog](http://joshualande.com/jekyll-github-pages-poole/) was helpful read. I liked how simple it is to add extra features such as Disqus comments and Google Analytics on the website. In addition, I found this [article on how to maintain tags](http://charliepark.org/tags-in-jekyll/). 
 
-After being dormant for a couple of years, I'm excited to be blogging again. I plan to use this blog as a method to explore and document my interests and passions. Some common topics that I'll focus on will be user experience design, technology, art, travel, minimalism, herbalism, and spiritual practices. 
+This is an extremely awkward first post but I don't know how else to express all the back and forth I went through before finding the right blogging tool. Yes, I am really that picky.  
+
+Anyways, I'm excited to be blogging again. I plan to use this blog as a method to explore and document my interests and passions. Some common topics that I'll focus on will be user experience design, technology, art, travel, minimalism, herbalism, and spiritual practices. 

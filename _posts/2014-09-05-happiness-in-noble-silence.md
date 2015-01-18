@@ -13,4 +13,6 @@ Being surrounded by nature and people with good intentions helped me step back a
 
 I loved keeping Noble Silence. Whenever I passed another person, I simply smiled at them and continued on without interruption in my mind. As my mind became free from others' needs and expectation, I felt present with the late summer flowers (Golden Rod, Queen Ann's Lace and Red Clover), the taste and smell of delicious food, and the simple joy of being alive. 
 
+![Won Retreat Center]({{ page.baseurl }}/images/2014-09-05-won-retreat-center.jpg "Won Retreat Center")
+
 When Noble Silence ended in the final day, I felt anxiety and panic arise. It was difficult coming out of silence and talking with people. While I truly appreciated the people at the retreat, I did not feel comfortable connecting with them using words. Words are constructs of expectation and judgement. "What do you do? Where are you from? How did you get here?" Do these conversations matter? I felt the common experiences we had shared during the retreat were much stronger than idle words we exchanged at the end of the retreat. 

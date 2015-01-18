@@ -3,9 +3,10 @@ layout: default
 ---
 {% include navigation-blog.html %}
 <div class="post">
+<div class="content">	
+	<a href="../../../../../blog">Posts</a> | <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
 	<h1 class="title">{{ page.title }}</h1>
 	<h3 class="subtitle">{{ page.subtitle }}</h3>
-	<p class="date">{{ page.date | date_to_string }}</p>
 	{{ content }}
 	<p class="pagination">
 		{% if paginator.previous_page %}
@@ -16,4 +17,5 @@ layout: default
 		<a href="{{ next_post }}"><span class="next">Newer Post &#x276f;</span></a>
 		{% endif %}
 	</p>
+</div>
 </div>

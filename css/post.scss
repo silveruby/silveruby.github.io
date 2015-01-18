@@ -1,41 +1,37 @@
 ---
 ---
 /* STYLE */
-.post{
-	h1{
-		font-size: 3em;
-	}
-
-	h3{
-		font-size: 1.5em;
-	}
-	p{
-		font-size: 1.5em;
-		font-weight: 500;
-		line-height: 1.5em;
-		margin: 1.5em 0;
-	}
-	p.date, p.prev_next{
-		font-size: 1em;
-		color: #333;
-	}
-	p.title{
-		margin-top: 50px;
-	}
-	p.subtitle{
-		margin-top: 0px;
-	}
-	p.date{
-		margin: 0;
-	}
-	p.prev_next{
-		margin-top: 30px;
-		.prev{
-			float: left;
-		}
-		.next{
-			float: right;
-			padding-right: 5px;
+body{
+	.container{
+		.post{
+			.content{
+				p.date, p.prev_next{
+					font-size: 1em;
+				}
+				p.title{
+					margin-top: 50px;
+				}
+				p.subtitle{
+					margin-top: 0px;
+				}
+				p.date{
+					margin: 0 0;
+				}
+				p.prev_next{
+					margin-top: 30px;
+					.prev{
+						float: left;
+					}
+					.next{
+						float: right;
+						padding-right: 5px;
+					}
+				}
+				
+				img{
+					width: 100%;
+				}
+			}
 		}
 	}
 }
