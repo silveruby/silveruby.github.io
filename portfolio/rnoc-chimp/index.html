@@ -19,263 +19,264 @@ title: GT-RNOC
 				Mockups,
 				Prototypes,
 				Documentation
-			</span></li>
-			<li>Technology<span>HTML/CSS/Javascript, Photoshop, Illustrator</span></li>
+			</span>
+		</li>
+		<li>Technology<span>HTML/CSS/Javascript, Photoshop, Illustrator</span></li>
+	</ul>	
+</div>
+
+
+<div class="proj-content">
+	<header class="well" id="about"><h2>About the Project</h2></header>		
+	<section>
+		<p>Contextual Human Interface and Multimedia Platform (CHIMP) is collaborative project between Motorola and GTRNOC (Georgia Tech Research Network Operation Center) to research and develop a Set-Top Box development platform. My team and I started working on this project January 2010 and by September we developed a platform which were used by students to develop interactive widgets on the TV.</p>	
+		<p>My role primary focused on interaction design and front-end development.</p>	
+		<p>For the research phase, I <strong>used competitive analysis</strong> and <strong>created several personas and scenarios</strong>, and <strong>wrote design/technical documentations</strong>.</p>
+		<p>Once the research and guidelines were defined, I work with the team to create a series of wireframes/mockups and interactive HTML prototypes (<a href="#p2">see Phase 2</a>) and integrated the front-end components with back-end data.</p>
+		<p>A good example of interactive HTML prototype would be this <a href='./userOptions/userOptions.html' target='_blank'>widget store</a>, in which I demo how to use TV inputs to handle screen interactions.</p>									
+		<p><em>Learn more...</em></p>
+		<ul>
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#p1">Phase 1: Research</a></li>
+			<li><a href="#p2">Phase 2: Design</a></li>	
+			<li><a href="#p3">Phase 3: Prototype</a></li>	
+			<li><a href="#p4">Phase 4: Additional Works & Evaluations</a></li>														
+		</ul>							
+	</section>
+
+	<header class="well" id="intro"><a href="#top">Back to top</a><h2>Introduction</h2></header>
+	<section>
+		<h3>What is CHIMP?</h3>
+		<p>CHIMP is a collaborative project between Georgia Tech Research Network Operations Center (RNOC) and Motorola. The goal of the platform is to provide developers (students) an application development environment for them in which they can create widgets on TV. A platform that allows developers to...
+		</p>					
+		<ul>
+			<li>Access metadata from video Head-End services</li>
+			<li>Access third party services on the internet</li>
+			<li>Control how widgets will be shown</li>
+			<li>Access the viewing history of the user</li>
+		</ul>		
+
+		<h3>Understanding The Business Model</h3>							
+
+		<div class="image">
+			<img src="./CHIMP_BizDiagram.png" />
+			<h6>Figure 1. The Business Model Diagram</h6>
+		</div>
+
+
+		<header class="well" id="p1"><a href="#top">Back to top</a><h2>Phase 1: Research</h2></header>
+
+		<h3>Exploring Personas</h3>
+		<ul>
+			<li>Passive vs. Active Users</li>													
+		</ul>
+
+		<p>The first task we did was to understand our users through different types of personas. TV users are very diverse and general so we tried to group them into similar needs and goals. We specifically focused on <em>goals, attitudes, behaviors and interests</em>.</p>	
+		<h3>Evaluating Existing Systems</h3>		
+		<ul>
+			<li>10-foot UI 'lean back' vs. 2-foot UI 'lean forward'</li>											
+		</ul>																
+		<p>Interactive TV is a new market and we have not seen a lot of successful implementations on Set-Top Boxes (STB). At the time of the research in 2010, I looked at the following Existing Systems: <em>Yahoo Widgets, Hulu and Boxee.</em></p>											
+	</section>
+
+	<header class="well" id="p2"><a href="#top">Back to top</a><h2>Phase 2: Initial Design</h2></header>
+	<section>
+
+		<h3>Stage 1: Defining the Terminologies &amp; Guidelines</h3>
+
+		<h4>Terminologies for Widgets</h4>
+
+		<ul>
+			<li><strong>View</strong>: the size of a widget</li>	
+			<li><a href='./views_grids/views.html' rel='external' target='_blank'>Simple Interactive Wireframe</a></li>																								
+		</ul>		
+
+
+		<p>Designing for a TV UI is much different than for a website. Certain differences are screen size, user attention and style of navigation. For initial design, I decided to create some basic guidelines for the size of the widgets.</p> 
+		<p>Inspired by an article about good design constrains and <a href='http://www.blueprintcss.org/'>CSS Framework Blueprint</a>, I used a 8x8 grid system to divide up the screen. The grid system was used for the rest of the wireframes and prototypes. It allowed a lot of flexibility for layout styles but also made sure they were consistent and proportional with each other.</p>
+
+		<div class="image">
+			<img src="./view_full_screen.png" />
+			<h6>Figure 2. Full Screen View Grid</h6>
+		</div>
+		<div class="image">
+			<img src="./view_half_screen.png" />
+			<h6>Figure 3. Half Screen View Grid</h6>
+		</div>
+		<div class="image">
+			<img src="./view_icon.png" />
+			<h6>Figure 4. Icon View Grid</h6>
+		</div>
+		<div class="image">
+			<img src="./view_one_line.png" />
+			<h6>Figure 5. One Line View Grid</h6>
+		</div>
+		<div class="image">
+			<img src="./view_regular.png" />
+			<h6>Figure 6. Regular View Grid</h6>
+		</div>
+		<div class="image">
+			<img src="./view_small.png" />
+			<h6>Figure 7. Small View Grid</h6>
+		</div>
+		<div class="image">
+			<img src="./view_ticker.png" />
+			<h6>Figure 8. Ticker View Grid</h6>
+		</div>						
+
+		<h4>Terminologies for the Platform</h4>
+
+		<ul>
+			<li><strong>Layout</strong>: the position of the widget(s) on screen</li>	
+			<li><strong>Theme</strong>: the style and colors</li>
+			<li><strong>Operator User Experience (OUX)</strong>: layout + theme</li>						
+		</ul>
+
+		<p>Because we were building a platform that will support many widgets, we had to figure out how to maintain a consistent look &amp; feel of it.  This was a big challenge because we had to balance between flexibility for the developers and consistency for the platform. After several rounds of discussion, we came up with a model and these terminologies: layout, theme, and OUX.</p>	
+
+		<h4>Design Considerations</h4>					
+		<ul>
+			<li><strong>Interlacing</strong> - TV display uses interlacing scan where each frame is made up of two frames. Horizontal lines can flicker or vibrate if they are too thin. Therefore, make sure to create thick horizontal lines.</li>
+			<li><strong>Color</strong> - Colors are much more saturated on TV screen than on computer screen. Make sure to use CMYK colors. Extremely vibrant or pale colors can cause problem.</li>	
+			<li><strong>Font</strong> - Text should readable from a larger distance (10 feet). Avoid serif font and stick with sans serif or slab serif font. Font size should be no less than 24pt. Avoid red text. Use anti-aliasing for readability.</li>
+			<li><strong>Navigation</strong> - Avoid scrolling when possible. Divide contents up if it requires scrolling and make use of panels.</li>													
 		</ul>	
-	</div>
 
+		<h3>Stage 2: Exploring Alternative Designs for Layouts</h3>
+		<ul>
+			<li>Transparency vs. Resizing</li>	
+			<li>Multiple vs. Single Widgets</li>					
+		</ul>					
+		<p>Here are a couple of wireframe, focusing on layouts, for single widget views or multiple widget views. The goal was to figure out how single or multiple widgets can be displayed on the screen and what types of information can be fit into widget space.</p>
+		<p>The main challenge was to figure out how to show the widgets without competing for attention away from the TV programs. We wanted to extend the TV viewing experience but did not want to take over the focus from watching TV. Should the TV content be resized or should the widgets be semi-transparent?</p>					
 
-	<div class="proj-content">
-		<header class="well" id="about"><h2>About the Project</h2></header>		
-		<section>
-			<p>Contextual Human Interface and Multimedia Platform (CHIMP) is collaborative project between Motorola and GTRNOC (Georgia Tech Research Network Operation Center) to research and develop a Set-Top Box development platform. My team and I started working on this project January 2010 and by September we developed a platform which were used by students to develop interactive widgets on the TV.</p>	
-			<p>My role primary focused on interaction design and front-end development.</p>	
-			<p>For the research phase, I <strong>used competitive analysis</strong> and <strong>created several personas and scenarios</strong>, and <strong>wrote design/technical documentations</strong>.</p>
-			<p>Once the research and guidelines were defined, I work with the team to create a series of wireframes/mockups and interactive HTML prototypes (<a href="#p2">see Phase 2</a>) and integrated the front-end components with back-end data.</p>
-			<p>A good example of interactive HTML prototype would be this <a href='./userOptions/userOptions.html' target='_blank'>widget store</a>, in which I demo how to use TV inputs to handle screen interactions.</p>									
-			<p><em>Learn more...</em></p>
-			<ul>
-				<li><a href="#intro">Introduction</a></li>
-				<li><a href="#p1">Phase 1: Research</a></li>
-				<li><a href="#p2">Phase 2: Design</a></li>	
-				<li><a href="#p3">Phase 3: Prototype</a></li>	
-				<li><a href="#p4">Phase 4: Additional Works & Evaluations</a></li>														
-			</ul>							
-		</section>
+		<div class="image">
+			<img src="./TV_MaxView_MultipleApp_1.png" />
+			<h6>Figure 9. Max View Multiple Apps Wireframe</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_MinView_MultipleApp_1.png" />
+			<h6>Figure 10. Min View Multiple Apps Wireframe</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_RegularView_MultipleApp_1.png" />
+			<h6>Figure 11. Regular View Multiple Apps Wireframe 1</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_RegularView_MultipleApp_2.png" />
+			<h6>Figure 12. Regular View Multiple Apps Wireframe 2</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_RegularView_MultipleApp_3.png" />
+			<h6>Figure 13. Regular View Multiple Apps Wireframe 3</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_RegularView_SingleApp_1.png" />
+			<h6>Figure 14. Regular View Single App 1</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_RegularView_SingleApp_2.png" />
+			<h6>Figure 15. Regular View Single App 2</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_RegularView_SingleApp_3.png" />
+			<h6>Figure 16. Regular View Single App 3</h6>
+		</div>												
 
-		<header class="well" id="intro"><a href="#top">Back to top</a><h2>Introduction</h2></header>
-		<section>
-			<h3>What is CHIMP?</h3>
-			<p>CHIMP is a collaborative project between Georgia Tech Research Network Operations Center (RNOC) and Motorola. The goal of the platform is to provide developers (students) an application development environment for them in which they can create widgets on TV. A platform that allows developers to...
-			</p>					
-			<ul>
-				<li>Access metadata from video Head-End services</li>
-				<li>Access third party services on the internet</li>
-				<li>Control how widgets will be shown</li>
-				<li>Access the viewing history of the user</li>
-			</ul>		
+		<h3>Stage 3: Narrowing Down Options for Layouts</h3>	
+		<p>After exploring alternative designs, we narrowed down to three: icon layout, regular layout, small layout. Icon layout shows multiple widgets icons. Regular layout provides ~1/4 of screen for a single widget and small layout provides ~1/8 of screen for a single widget.</p>
 
-			<h3>Understanding The Business Model</h3>							
+		<div class="image">
+			<img src="./TV_RegularView.png" />
+			<h6>Figure 17. Regular View Wireframe</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_SmallView.png" />
+			<h6>Figure 18. Small View Wireframe</h6>
+		</div>
+		<div class="image">
+			<img src="./TV_IconView.png" />
+			<h6>Figure 19. Icon View Wireframe</h6>
+		</div>
 
-			<div class="image">
-				<img src="./CHIMP_BizDiagram.png" />
-				<h6>Figure 1. The Business Model Diagram<h6>
-				</div>
+	</section>
 
-
-				<header class="well" id="p1"><a href="#top">Back to top</a><h2>Phase 1: Research</h2></header>
-
-				<h3>Exploring Personas</h3>
+	<header class="well" id="p3"><a href="#top">Back to top</a><h2>Phase 3: Prototype</h2></header>
+	<section>
+		<ul>
+			<li>Challenges
 				<ul>
-					<li>Passive vs. Active Users</li>													
+					<li>Unable to Upgrade Image/Webkit Browser On STB</li>
+					<li>CSS3 &amp; HTML5 Not Supported on STB</li>		
+					<li>Remote Control As Input Method - Limited Keys</li>	
+					<li>Approaching Deadlines</li>	
+				</ul>																			
+			</li>
+			<li>Design Decisions
+				<ul>
+					<li>Used Transparency Instead of Resizing the TV Content</li>
+					<li>Focused on Creating a Platform for Widget Development</li>
 				</ul>
+			</li>
+			<li>Sample Widgets</li>
+		</ul>				
 
-				<p>The first task we did was to understand our users through different types of personas. TV users are very diverse and general so we tried to group them into similar needs and goals. We specifically focused on <em>goals, attitudes, behaviors and interests</em>.</p>	
-				<h3>Evaluating Existing Systems</h3>		
-				<ul>
-					<li>10-foot UI 'lean back' vs. 2-foot UI 'lean forward'</li>											
-				</ul>																
-				<p>Interactive TV is a new market and we have not seen a lot of successful implementations on Set-Top Boxes (STB). At the time of the research in 2010, I looked at the following Existing Systems: <em>Yahoo Widgets, Hulu and Boxee.</em></p>											
-			</section>
+		<p>Having a pretty good idea of the layouts we want, I started prototyping on the STB. The STB renders through a WebKit browser. The browser is relatively old and doesn't support CSS3 &amp; HTML5. For example, everyone wanted the widgets to have rounded corners but cannot set them using CSS. Therefore, if you look closely in regular and small Layout, the corners are not rounded for that reason.</p>
 
-			<header class="well" id="p2"><a href="#top">Back to top</a><h2>Phase 2: Initial Design</h2></header>
-			<section>
+		<!-- > 					<div id="simplegallery4"></div>	 -->
+		<div class='video_container'>
+			<div>
+				<video src="Seinfeld.ogv"  width="480" controls>
+					Your browser does not support the video tag.
+				</video>
+				<h6>Video: Icon, Regular &amp; Accordion Layout</h6>												
+			</div>
+		</div>
 
-				<h3>Stage 1: Defining the Terminologies &amp; Guidelines</h3>
+		<p>Customized JQuery themes are used for the platform and widgets. This allowed me to focus more on prototyping the layout and key handling interactions.</p>					
+		<div class='video_container'>
+			<div>
+				<video src="Themes.ogv"  width="480" controls>
+					Your browser does not support the video tag.
+				</video>	
+				<h6>Video: Themes</h6>									
+			</div>
+		</div>
+	</section>
 
-				<h4>Terminologies for Widgets</h4>
+	<h3>Final Prototype</h3>	
+	<section>
+		<ul>
+			<li>Collaborated with Visual Designer</li>	
+			<li>Developed the <a href='./userOptions/userOptions.html' target='_blank'>Widget Store</a></li>
+			<li>Polished Sample Widgets</li>						
+		</ul>					
+		<p>Once the team is comfortable with the prototype, we then worked with a professional Visual Designer. She helped with the icons and providing good rounded corner images. We incorporated her designs into the prototype. In addition, I also added the Widget Store.</p>
 
-				<ul>
-					<li><strong>View</strong>: the size of a widget</li>	
-					<li><a href='./views_grids/views.html' rel='external' target='_blank'>Simple Interactive Wireframe</a></li>																								
-				</ul>		
+		<div class='video_container'>
+			<div>
+				<video src="CHIMP_edited.webm"  width="640" controls>
+					Your browser does not support the video tag.
+				</video>
+				<h6>Video: Final Layouts &amp; Widget Store</h6>										
+			</div>
+		</div>
+	</section>
 
+	<header class="well" id="p4"><a href="#top">Back to top</a><h2>Phase 4: Additional Works &amp; Evaluation</h2></header>			
+	<section>
+		<h3>Developing Sample Widgets and Companion Devices</h3>
+		<p>A lot of debugging and improvements were done by developed different sample widgets on the platform. Some examples were a Weather Widget and a Facebook widget.</p>
+		<p>In addition to developing on the Set-top Box, I also <strong>created a mobile application</strong> called adVenture which extended beyond TV. adVenture detects products from metadata of the TV content and offers product deals. User can get the deals on TV and receive it on their desktop or mobile phone. The authentication between STB and adVenture is done through SMS. </p>
 
-				<p>Designing for a TV UI is much different than for a website. Certain differences are screen size, user attention and style of navigation. For initial design, I decided to create some basic guidelines for the size of the widgets.</p> 
-				<p>Inspired by an article about good design constrains and <a href='http://www.blueprintcss.org/'>CSS Framework Blueprint</a>, I used a 8x8 grid system to divide up the screen. The grid system was used for the rest of the wireframes and prototypes. It allowed a lot of flexibility for layout styles but also made sure they were consistent and proportional with each other.</p>
+		<h3>Supporting Student Development</h3>	
+		<p>The <strong>platform was available to students during 2010 Fall and 2011 Spring semesters</strong>. We wrote detailed documentation for API, key handling, interaction, and layout. We also supported students throughout their projects.</p>	
 
-				<div class="image">
-					<img src="./view_full_screen.png" />
-					<h6>Figure 2. Full Screen View Grid<h6>
-					</div>
-					<div class="image">
-						<img src="./view_half_screen.png" />
-						<h6>Figure 3. Half Screen View Grid<h6>
-						</div>
-						<div class="image">
-							<img src="./view_icon.png" />
-							<h6>Figure 4. Icon View Grid<h6>
-							</div>
-							<div class="image">
-								<img src="./view_one_line.png" />
-								<h6>Figure 5. One Line View Grid<h6>
-								</div>
-								<div class="image">
-									<img src="./view_regular.png" />
-									<h6>Figure 6. Regular View Grid<h6>
-									</div>
-									<div class="image">
-										<img src="./view_small.png" />
-										<h6>Figure 7. Small View Grid<h6>
-										</div>
-										<div class="image">
-											<img src="./view_ticker.png" />
-											<h6>Figure 8. Ticker View Grid<h6>
-											</div>						
-
-											<h4>Terminologies for the Platform</h4>
-
-											<ul>
-												<li><strong>Layout</strong>: the position of the widget(s) on screen</li>	
-												<li><strong>Theme</strong>: the style and colors</li>
-												<li><strong>Operator User Experience (OUX)</strong>: layout + theme</li>						
-											</ul>
-
-											<p>Because we were building a platform that will support many widgets, we had to figure out how to maintain a consistent look &amp; feel of it.  This was a big challenge because we had to balance between flexibility for the developers and consistency for the platform. After several rounds of discussion, we came up with a model and these terminologies: layout, theme, and OUX.</p>	
-
-											<h4>Design Considerations</h4>					
-											<ul>
-												<li><strong>Interlacing</strong> - TV display uses interlacing scan where each frame is made up of two frames. Horizontal lines can flicker or vibrate if they are too thin. Therefore, make sure to create thick horizontal lines.</li>
-												<li><strong>Color</strong> - Colors are much more saturated on TV screen than on computer screen. Make sure to use CMYK colors. Extremely vibrant or pale colors can cause problem.</li>	
-												<li><strong>Font</strong> - Text should readable from a larger distance (10 feet). Avoid serif font and stick with sans serif or slab serif font. Font size should be no less than 24pt. Avoid red text. Use anti-aliasing for readability.</li>
-												<li><strong>Navigation</strong> - Avoid scrolling when possible. Divide contents up if it requires scrolling and make use of panels.</li>													
-											</ul>	
-
-											<h3>Stage 2: Exploring Alternative Designs for Layouts</h3>
-											<ul>
-												<li>Transparency vs. Resizing</li>	
-												<li>Multiple vs. Single Widgets</li>					
-											</ul>					
-											<p>Here are a couple of wireframe, focusing on layouts, for single widget views or multiple widget views. The goal was to figure out how single or multiple widgets can be displayed on the screen and what types of information can be fit into widget space.</p>
-											<p>The main challenge was to figure out how to show the widgets without competing for attention away from the TV programs. We wanted to extend the TV viewing experience but did not want to take over the focus from watching TV. Should the TV content be resized or should the widgets be semi-transparent?</p>					
-
-											<div class="image">
-												<img src="./TV_MaxView_MultipleApp_1.png" />
-												<h6>Figure 9. Max View Multiple Apps Wireframe<h6>
-												</div>
-												<div class="image">
-													<img src="./TV_MinView_MultipleApp_1.png" />
-													<h6>Figure 10. Min View Multiple Apps Wireframe<h6>
-													</div>
-													<div class="image">
-														<img src="./TV_RegularView_MultipleApp_1.png" />
-														<h6>Figure 11. Regular View Multiple Apps Wireframe 1<h6>
-														</div>
-														<div class="image">
-															<img src="./TV_RegularView_MultipleApp_2.png" />
-															<h6>Figure 12. Regular View Multiple Apps Wireframe 2<h6>
-															</div>
-															<div class="image">
-																<img src="./TV_RegularView_MultipleApp_3.png" />
-																<h6>Figure 13. Regular View Multiple Apps Wireframe 3<h6>
-																</div>
-																<div class="image">
-																	<img src="./TV_RegularView_SingleApp_1.png" />
-																	<h6>Figure 14. Regular View Single App 1<h6>
-																	</div>
-																	<div class="image">
-																		<img src="./TV_RegularView_SingleApp_2.png" />
-																		<h6>Figure 15. Regular View Single App 2<h6>
-																		</div>
-																		<div class="image">
-																			<img src="./TV_RegularView_SingleApp_3.png" />
-																			<h6>Figure 16. Regular View Single App 3<h6>
-																			</div>												
-
-																			<h3>Stage 3: Narrowing Down Options for Layouts</h3>	
-																			<p>After exploring alternative designs, we narrowed down to three: icon layout, regular layout, small layout. Icon layout shows multiple widgets icons. Regular layout provides ~1/4 of screen for a single widget and small layout provides ~1/8 of screen for a single widget.</p>
-
-																			<div class="image">
-																				<img src="./TV_RegularView.png" />
-																				<h6>Figure 17. Regular View Wireframe<h6>
-																				</div>
-																				<div class="image">
-																					<img src="./TV_SmallView.png" />
-																					<h6>Figure 18. Small View Wireframe<h6>
-																					</div>
-																					<div class="image">
-																						<img src="./TV_IconView.png" />
-																						<h6>Figure 19. Icon View Wireframe<h6>
-																						</div>
-
-																					</section>
-
-																					<header class="well" id="p3"><a href="#top">Back to top</a><h2>Phase 3: Prototype</h2></header>
-																					<section>
-																						<ul>
-																							<li>Challenges
-																								<ul>
-																									<li>Unable to Upgrade Image/Webkit Browser On STB</li>
-																									<li>CSS3 &amp; HTML5 Not Supported on STB</li>		
-																									<li>Remote Control As Input Method - Limited Keys</li>	
-																									<li>Approaching Deadlines</li>	
-																								</ul>																			
-																							</li>
-																							<li>Design Decisions
-																								<ul>
-																									<li>Used Transparency Instead of Resizing the TV Content</li>
-																									<li>Focused on Creating a Platform for Widget Development</li>
-																								</ul>
-																							</li>
-																							<li>Sample Widgets</li>
-																						</ul>				
-
-																						<p>Having a pretty good idea of the layouts we want, I started prototyping on the STB. The STB renders through a WebKit browser. The browser is relatively old and doesn't support CSS3 &amp; HTML5. For example, everyone wanted the widgets to have rounded corners but cannot set them using CSS. Therefore, if you look closely in regular and small Layout, the corners are not rounded for that reason.</p>
-
-																						<!-- > 					<div id="simplegallery4"></div>	 -->
-																						<div class='video_container'>
-																							<div>
-																								<video src="Seinfeld.ogv"  width="480" controls>
-																									Your browser does not support the video tag.
-																								</video>
-																								<h6>Video: Icon, Regular &amp; Accordion Layout</h6>												
-																							</div>
-																						</div>
-
-																						<p>Customized JQuery themes are used for the platform and widgets. This allowed me to focus more on prototyping the layout and key handling interactions.</p>					
-																						<div class='video_container'>
-																							<div>
-																								<video src="Themes.ogv"  width="480" controls>
-																									Your browser does not support the video tag.
-																								</video>	
-																								<h6>Video: Themes</h6>									
-																							</div>
-																						</div>
-																					</section>
-
-																					<h3>Final Prototype</h3>	
-																					<section>
-																						<ul>
-																							<li>Collaborated with Visual Designer</li>	
-																							<li>Developed the <a href='./userOptions/userOptions.html' target='_blank'>Widget Store</a></li>
-																							<li>Polished Sample Widgets</li>						
-																						</ul>					
-																						<p>Once the team is comfortable with the prototype, we then worked with a professional Visual Designer. She helped with the icons and providing good rounded corner images. We incorporated her designs into the prototype. In addition, I also added the Widget Store.</p>
-
-																						<div class='video_container'>
-																							<div>
-																								<video src="CHIMP_edited.webm"  width="640" controls>
-																									Your browser does not support the video tag.
-																								</video>
-																								<h6>Video: Final Layouts &amp; Widget Store</h6>										
-																							</div>
-																						</div>
-																					</section>
-
-																					<header class="well" id="p4"><a href="#top">Back to top</a><h2>Phase 4: Additional Works &amp; Evaluation</h2></header>			
-																					<section>
-																						<h3>Developing Sample Widgets and Companion Devices</h3>
-																						<p>A lot of debugging and improvements were done by developed different sample widgets on the platform. Some examples were a Weather Widget and a Facebook widget.</p>
-																						<p>In addition to developing on the Set-top Box, I also <strong>created a mobile application</strong> called adVenture which extended beyond TV. adVenture detects products from metadata of the TV content and offers product deals. User can get the deals on TV and receive it on their desktop or mobile phone. The authentication between STB and adVenture is done through SMS. </p>
-
-																						<h3>Supporting Student Development</h3>	
-																						<p>The <strong>platform was available to students during 2010 Fall and 2011 Spring semesters</strong>. We wrote detailed documentation for API, key handling, interaction, and layout. We also supported students throughout their projects.</p>	
-
-																						<h3>Evaluation</h3>	
-																						<ul>
-																							<li>Student Preferences - Regular, Small &amp; Icon Views</li>	
-																							<li>Remote Control Key Handling Difficult Concept - not many students  utilized the the remote (key) navigation.</li>																			
-																						</ul>
-																					</section>
-																				</div> <!-- end span9 -->
+		<h3>Evaluation</h3>	
+		<ul>
+			<li>Student Preferences - Regular, Small &amp; Icon Views</li>	
+			<li>Remote Control Key Handling Difficult Concept - not many students  utilized the the remote (key) navigation.</li>																			
+		</ul>
+	</section>
+</div> <!-- end span9 -->
 
