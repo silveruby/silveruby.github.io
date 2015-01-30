@@ -1,21 +1,20 @@
 ---
 layout: default
 ---
-{% include navigation-blog.html %}
 <div class="post">
-<div class="content">	
-	<a href="../../../../../blog">Posts</a> | <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
-	<h1 class="title">{{ page.title }}</h1>
-	<h3 class="subtitle">{{ page.subtitle }}</h3>
-	{{ content }}
-	<p class="pagination">
-		{% if paginator.previous_page %}
-		<a href="{{ prev_post }}"><span class="prev">&#x276e; Older Post</span></a>
-		{% endif %}
-		
-		{% if paginator.next_page %}
-		<a href="{{ next_post }}"><span class="next">Newer Post &#x276f;</span></a>
-		{% endif %}
-	</p>
-</div>
+	<div class="content">	
+		<a href="../../../../../blog">Posts</a> | <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
+		<h1 class="title">{{ page.title }}</h1>
+		<h3 class="subtitle">{{ page.subtitle }}</h3>
+		{{ content }}
+		<p class="pagination">
+			{% if paginator.previous_page %}
+			<a href="{{ prev_post }}"><span class="prev">&#x276e; Older Post</span></a>
+			{% endif %}
+
+			{% if paginator.next_page %}
+			<a href="{{ next_post }}"><span class="next">Newer Post &#x276f;</span></a>
+			{% endif %}
+		</p>
+	</div>
 </div>

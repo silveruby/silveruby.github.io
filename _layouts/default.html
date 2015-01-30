@@ -2,11 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 {% include head.html %}
 <body>
+	{% include navbar.html %}
 	<div class="container">
-		{{ content }}
-		<div class="footer">
-			{% include footer.html %}
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+				{{ content }}
+			</div>
 		</div>
 	</div>
+	{% include footer.html %}
 </body>
 </html>
