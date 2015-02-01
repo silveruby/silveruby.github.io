@@ -107,47 +107,53 @@
 }
 
 /* STYLE */
-.home
-{
-	
-	ul, li {
-		margin: 0;
-		padding: 0;
-		clear: both;
-	}
-	
-	ul
-	{
-		list-style-type: none;
+.container{
+	.row{
+		.home{
+			ul, li {
+				margin: 0;
+				padding: 0;
+				clear: both;
+			}
 
-		h3{
-			display: inline;
-			margin-right: 2em;
-		}
-	}
+			ul
+			{
+				list-style-type: none;
+
+				h3{
+					display: inline;
+					margin-right: 2em;
+				}
+			}
 
 
-	.about
-	{
-		margin: 2em 0;
-		.name
-		{
-			font-size: 5em;
-			font-weight: 700;
-			line-height: 1.1em;
-		}
-		.title
-		{
-			font-size: 2.5em;
-			line-height: 1.6em;
-			font-weight: 600;
-		}
-		.skills
-		{
-			color: #999;
-			font-size: 2.5em;
-			font-weight: 300;
-			line-height: 1.6em;
+			.about
+			{
+				li{
+					font-size: 1em; /* reset from default.css */
+				}
+				
+				margin: 2em 0;
+				.name
+				{
+					font-size: 5.0em;
+					font-weight: 700;
+					line-height: 1.1em;
+				}
+				.title
+				{
+					font-size: 2.5em;
+					line-height: 1.6em;
+					font-weight: 600;
+				}
+				.skills
+				{
+					color: #999;
+					font-size: 2.5em;
+					font-weight: 300;
+					line-height: 1.6em;
+				}
+			}
 		}
 	}
 }

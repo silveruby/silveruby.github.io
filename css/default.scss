@@ -3,7 +3,6 @@
 /* STYLE */
 body
 {
-	font-size: 16px;
 	font-family: 'Open Sans', arial, sans-serif;
 
 	a{
@@ -18,7 +17,7 @@ body
 	.container{
 
 		/*CONTENT STYLES*/
-		.content{
+		.row{
 			
 			ul{
 				margin: 2em 0;
@@ -58,6 +57,12 @@ body
 				font-weight: 400;
 				line-height: 1.5em;
 				margin: 1.5em 0;
+			}
+			
+			.post{
+				img{
+					width: 100%;
+				}
 			}
 		}
 
