@@ -21,17 +21,28 @@ body
 			
 			ul{
 				margin: 2em 0;
+				padding: 0;
 
 				li{
-					margin-left: 1.5em;
 					font-size: 1.2em;
 					font-weight: 400;
-
-					span{
-						color: #333;
-						margin: 0 .5em;
-						font-size: 0.9em;
-						font-weight: 400;
+					list-style: none;
+					padding: .5em 0;
+					
+					.label{
+						position: relative;
+						top: -1px;
+						display: inline-block;
+						visibility: hidden;
+						
+						
+					}
+					
+					&:hover{
+						.label{
+							visibility: visible;
+						}
+						
 					}
 				}
 			}

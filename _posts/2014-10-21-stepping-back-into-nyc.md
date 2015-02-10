@@ -2,7 +2,7 @@
 layout: post
 title: Stepping back into NYC
 category: travel
-tags: feelings reflection 
+tags: nyc memories 
 ---
 Early Monday morning this week, I packed a bag of clothes for 4 days, and took the Acela Express from Boston to Manhattan.  The train arrived around 10AM and immediately I felt the rushing city energy as I stepped onto the station platform. I emerged onto 34th street and swirled in all directions as I tried to orient myself towards the PATH station. Left or Right? Oh Wait, East or West? My foot moved on their own before I could wrap my mind around what was happening. There’s no time to think, gotta keep moving! 
 

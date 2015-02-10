@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hello world!
-category: technology
+title: Hello World!
+category: programming
 tags: jekyll blog
 ---
 
@@ -13,6 +13,4 @@ The most common blogging CMS is WordPress. It is widely used by people and frank
 
 The light-weight static site generator provided exactly the simplicity and flexibility I was looking for. I really like Jekyll and feel this is the best way to blog. There are a lot of fantastic resources for Jekyll blogs. This [article on how to create a simple blog](http://joshualande.com/jekyll-github-pages-poole/) was helpful read. I liked how simple it is to add extra features such as Disqus comments and Google Analytics on the website. In addition, I found this [article on how to maintain tags](http://charliepark.org/tags-in-jekyll/). 
 
-This is an extremely awkward first post but I don't know how else to express all the back and forth I went through before finding the right blogging tool. Yes, I am really that picky.  
-
-Anyways, I'm excited to be blogging again. I plan to use this blog as a method to explore and document my interests and passions. Some common topics that I'll focus on will be user experience design, technology, art, travel, minimalism, herbalism, and spiritual practices. 
+Anyways, I'm excited to be blogging again. I plan to use this blog as a method to explore and document my interests and passions. Some common topics I want to focus on will be programming, travel, minimalism, and spiritual musings. 
