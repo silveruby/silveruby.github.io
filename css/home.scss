@@ -65,6 +65,42 @@
 		opacity: 1;
 	}
 }
+@-webkit-keyframes heartBeat
+{
+	0%
+	{
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+	50%
+	{
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	100%
+	{
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+@keyframes heartBeat
+{
+	0%
+	{
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+	50%
+	{
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	100%
+	{
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
 .fadeInRight
 {
 	animation-name: fadeInRight;
@@ -76,10 +112,6 @@
 	-webkit-animation-name: fadeIn;
 }
 
-.fadeInRight {
-	-webkit-animation-name: fadeInRight;
-	animation-name: fadeInRight;
-}
 
 /* ANIMATION DURATION */
 .animate
@@ -132,19 +164,30 @@
 				li{
 					font-size: 1em; /* reset from default.css */
 				}
-				
+
 				margin: 2em 0;
+
 				.name
 				{
 					font-size: 5.0em;
 					font-weight: 700;
 					line-height: 1.1em;
 				}
-				.title
+				.verb
 				{
-					font-size: 2.5em;
-					line-height: 1.6em;
-					font-weight: 600;
+					.glyphicon{
+						font-size: 5em;
+						color: red;
+						margin: .1em 0 0 0;
+
+						&:hover{
+							animation-name: heartBeat;
+							-webkit-animation-name: heartBeat;
+							animation-duration: 1s;
+							-webkit-animation-duration: 1s;
+						}
+					}
+
 				}
 				.skills
 				{
