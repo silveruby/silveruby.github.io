@@ -1,5 +1,11 @@
 ---
 ---
+/* COLORS */
+$primaryColor1: #EF9A9A; /*red 200*/
+$primaryColor2: #F44336; /*red 500*/
+$primaryColor3: #B71C1C; /*red 900*/
+$accentColor: #9FA8DA; /*indigo 200*/
+
 /* ANIMATION FRAMES */
 @-webkit-keyframes fadeInRight
 {
@@ -177,7 +183,7 @@
 				{
 					.glyphicon{
 						font-size: 5em;
-						color: red;
+						color: $primaryColor2;
 						margin: .1em 0 0 0;
 
 						&:hover{

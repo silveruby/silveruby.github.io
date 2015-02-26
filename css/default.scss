@@ -1,12 +1,35 @@
 ---
 ---
+/* COLORS */
+$primaryColor1: #EF9A9A; /*red 200*/
+$primaryColor2: #F44336; /*red 500*/
+$primaryColor3: #B71C1C; /*red 900*/
+$accentColor: #FFE0B2; /*orange 100*/
+
+/*OVERRIDING BOOTSTRAP*/
+.navbar-default {
+	background-color: $primaryColor2;
+	border-color: none;
+}
+.navbar-default .navbar-brand {
+	color: #FFF;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: $primaryColor1;
+	color: #FFF;
+}
+
 /* STYLE */
 body
-{
-	font-family: 'Open Sans', arial, sans-serif;
+{	
+	font-family: 'Roboto', sans-serif; 
 
 	a{
-		color: #F00;
+		color: $accentColor;
 		text-decoration: none;
 
 		&:hover{
@@ -18,7 +41,7 @@ body
 
 		/*CONTENT STYLES*/
 		.row{
-			
+
 			ul{
 				margin: 2em 0;
 				padding: 0;
@@ -28,21 +51,21 @@ body
 					font-weight: 400;
 					list-style: none;
 					padding: .5em 0;
-					
+
 					.label{
 						position: relative;
 						top: -1px;
 						display: inline-block;
 						visibility: hidden;
-						
-						
+
+
 					}
-					
+
 					&:hover{
 						.label{
 							visibility: visible;
 						}
-						
+
 					}
 				}
 			}
@@ -69,13 +92,13 @@ body
 				line-height: 1.5em;
 				margin: 1.5em 0;
 			}
-			
+
 			.post{
 				img{
 					width: 100%;
 				}
 			}
-			
+
 			.proj-content{
 				img{
 					width: 100%;
