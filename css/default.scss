@@ -5,6 +5,9 @@ $primaryColor1: #EF9A9A; /*red 200*/
 $primaryColor2: #F44336; /*red 500*/
 $primaryColor3: #B71C1C; /*red 900*/
 $accentColor: #FFE0B2; /*orange 100*/
+$basicTextColor: #333;
+$suppTextColor: #999;
+
 
 /*OVERRIDING BOOTSTRAP*/
 .navbar-default {
@@ -19,7 +22,7 @@ $accentColor: #FFE0B2; /*orange 100*/
 	text-transform: uppercase;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	background-color: $primaryColor1;
+	background-color: $primaryColor3;
 	color: #FFF;
 }
 
@@ -27,9 +30,11 @@ $accentColor: #FFE0B2; /*orange 100*/
 body
 {	
 	font-family: 'Roboto', sans-serif; 
+	font-size: 16px;
+	color: $basicTextColor;
 
 	a{
-		color: $accentColor;
+		color: $primaryColor3;
 		text-decoration: none;
 
 		&:hover{
@@ -47,7 +52,7 @@ body
 				padding: 0;
 
 				li{
-					font-size: 1.2em;
+					font-size: 1.0em;
 					font-weight: 400;
 					list-style: none;
 					padding: .5em 0;
@@ -71,35 +76,28 @@ body
 			}
 
 			h1{
-				font-size: 1.7em;
-				font-weight: 400;
+				font-size: 3.0em;
+				font-weight: 300;
 			}
 
 			h2{
-				font-size: 1.7em;
+				font-size: 1.5em;
 				font-weight: 400;	
 			}
 
 			h3{
-				font-size: 1.7em;
+				font-size: 1.5em;
 				font-style: italic;
 				font-weight: 400;
 			}
 
 			p{
-				font-size: 1.2em;
+				font-size: 1.0em;
 				font-weight: 400;
-				line-height: 1.5em;
-				margin: 1.5em 0;
+				line-height: 1.5;
 			}
 
 			.post{
-				img{
-					width: 100%;
-				}
-			}
-
-			.proj-content{
 				img{
 					width: 100%;
 				}

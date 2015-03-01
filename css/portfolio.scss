@@ -1,17 +1,20 @@
 ---
 ---
+/* COLORS */
+$primaryColor1: #EF9A9A; /*red 200*/
+$primaryColor2: #F44336; /*red 500*/
+$primaryColor3: #B71C1C; /*red 900*/
+$accentColor: #FFE0B2; /*orange 100*/
+$basicTextColor: #333;
+$suppTextColor: #999;
 
 /* GALLERY */
 .gallery{
-	.item{
-		font-size: 2em;
-		margin: 1em 0;
+	.row{
+		margin-bottom: 1.5em;
 		
-		img.img-circle{
-			width: 15%;
-			margin-right: 1em;
-			border: 2px solid #EEE;
+		p{
+			color: $suppTextColor;
 		}
-
 	} /*END Item*/
 } /*END GALLERY*/
