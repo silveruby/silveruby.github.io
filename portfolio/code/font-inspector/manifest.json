@@ -1,0 +1,11 @@
+{
+	"name": "Text Style Inspector",
+	"version": "1.0",
+	"manifest_version": 2,	
+	"description": "The Chrome Text Style Inspector extension shows style of the highlighted text on Chrome browser.",
+	"browser_action": {
+		"default_icon" : "icon.png",
+	    "default_popup": "popup.html"
+	  },
+	"permissions": [ "tabs", "http://*/*", "https://*/*" ]
+}
