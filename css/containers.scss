@@ -1,0 +1,59 @@
+---
+---
+/* COLORS */
+$primaryColor1: #EF9A9A; /*red 200*/
+$primaryColor2: #F44336; /*red 500*/
+$primaryColor3: #B71C1C; /*red 900*/
+$accentColor: #FFE0B2; /*orange 100*/
+$basicTextColor: #333;
+$suppTextColor: #999;
+
+/*ALL CONTAINERS*/
+.portfolio, .blog, .connect{
+	.row{
+		margin-bottom: 1.5em;
+		
+		p{
+			color: $suppTextColor;
+			margin: 5px 0 0 0;
+		}
+	}
+} /*END ALL CONTAINERS*/
+
+/* PORTFOLIO */
+.portfolio{
+	.row{
+		p.timeline{
+			visibility: hidden;
+		}
+		
+		&:hover{
+			p.timeline{
+				visibility: visible;
+			}
+		}
+	} /*END Item*/
+} /*END PORTFOLIO*/
+
+/* BLOG */
+.blog{
+	.row{
+		div.date{
+			float: left;
+			margin: .2em 1.2em 0 0;
+		}
+		div.post{
+			min-width: 300px;
+			float: left;
+		}
+	} /*END Item*/
+} /*END BLOG*/
+
+/* BLOG */
+.connect{
+	.row{
+		div.link{
+			margin: .2em 1.2em 0 0;
+		}
+	} /*END Item*/
+} /*END BLOG*/

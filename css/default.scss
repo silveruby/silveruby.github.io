@@ -9,7 +9,7 @@ $basicTextColor: #333;
 $suppTextColor: #999;
 
 
-/*OVERRIDING BOOTSTRAP*/
+/*OVERRIDING BOOTSTRAP NAVBAR*/
 .navbar-default {
 	background-color: $primaryColor2;
 	border-color: none;
@@ -17,9 +17,24 @@ $suppTextColor: #999;
 .navbar-default .navbar-brand {
 	color: #FFF;
 }
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: $primaryColor1;
+}
 .navbar-default .navbar-nav>li>a {
 	color: #FFF;
 	text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: $primaryColor1;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #FFF;
+}
+.navbar-default .navbar-toggle, .navbar-default .navbar-collapse{
+	border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: $primaryColor1;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	background-color: $primaryColor3;
@@ -46,35 +61,6 @@ body
 
 		/*CONTENT STYLES*/
 		.row{
-			
-			ul{
-				margin: 2em 0;
-				padding: 0;
-
-				li{
-					font-size: 1.0em;
-					font-weight: 400;
-					list-style: none;
-					padding: .5em 0;
-
-					.label{
-						position: relative;
-						top: -1px;
-						display: inline-block;
-						visibility: hidden;
-
-
-					}
-
-					&:hover{
-						.label{
-							visibility: visible;
-						}
-
-					}
-				}
-			}
-
 			form{
 				margin: 2em 0;
 				padding: 0;
@@ -101,12 +87,6 @@ body
 				font-size: 1.0em;
 				font-weight: 400;
 				line-height: 1.5;
-			}
-
-			.post{
-				img{
-					width: 100%;
-				}
 			}
 		}
 
