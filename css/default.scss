@@ -46,7 +46,7 @@ body
 
 		/*CONTENT STYLES*/
 		.row{
-
+			
 			ul{
 				margin: 2em 0;
 				padding: 0;
@@ -75,6 +75,11 @@ body
 				}
 			}
 
+			form{
+				margin: 2em 0;
+				padding: 0;
+			}
+			
 			h1{
 				font-size: 3.0em;
 				font-weight: 300;
@@ -82,7 +87,8 @@ body
 
 			h2{
 				font-size: 1.5em;
-				font-weight: 400;	
+				font-weight: 400;
+				margin: 0 0 0 0;	
 			}
 
 			h3{

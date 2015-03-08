@@ -9,12 +9,22 @@ $basicTextColor: #333;
 $suppTextColor: #999;
 
 /* GALLERY */
-.gallery{
+.portfolio{
 	.row{
 		margin-bottom: 1.5em;
 		
 		p{
 			color: $suppTextColor;
+		}
+		
+		p.timeline{
+			visibility: hidden;
+		}
+		
+		&:hover{
+			p.timeline{
+				visibility: visible;
+			}
 		}
 	} /*END Item*/
 } /*END GALLERY*/
