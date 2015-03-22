@@ -10,6 +10,6 @@ A year ago, I escaped the city because it was too much for me - the people, ener
 
 Sometimes I think my life could’ve been ‘better’ now had I sought a stable job in a mid-size city rather than NYC when I finished grad school. I would’ve at least saved money instead of squandering them away in rent, food and mindless shopping sprees. However, I don't really regret my time in NYC because I learned so much about myself and the world. Yes I had my heart broken a few times and made some silly career decisions, but I wouldn’t trade these experiences with anything else. 
 
-<img src="{{ page.baseurl }}/images/posts/2014-10-21-celebrating-2012.jpg" class="img-rounded" alt="Celebrating 2012 in Time Square" />
+<img class="responsive" src="../../../../../blog/images/2014-10-21-celebrating-2012.jpg" class="img-rounded" alt="Celebrating 2012 in Time Square" />
 
 When I was in elementary school in China, I  learned how to recite "Quiet Night Thought" by Li Bai — it is a poem that paints a traveler's nostalgia for home. When I came to American, the first poem I remember learning was “The Road Not Taken” by Robert Frost. At the moment, I feel more connected with this poem about travel than the first poem about home. I don’t miss home because I haven't found a place to call home yet. But, I have chosen a path. While I do wonder sometimes if I should’ve taken a different path, in the end, it probably doesn’t really matter. Life is best when it is full of adventures and surprises.

@@ -9,13 +9,16 @@ $basicTextColor: #333;
 $suppTextColor: #999;
 
 /*ALL CONTAINERS*/
-.portfolio, .blog, .connect{
+.portfolio, .project, .blog, .post, .connect{
 	.row{
 		margin-bottom: 1.5em;
 		
 		p{
 			color: $suppTextColor;
 			margin: 5px 0 0 0;
+		}
+		img.responsive{
+			width: 100%;
 		}
 	}
 } /*END ALL CONTAINERS*/
@@ -34,6 +37,18 @@ $suppTextColor: #999;
 		}
 	} /*END Item*/
 } /*END PORTFOLIO*/
+
+/* PROJECT */
+.project{
+	.row{
+		header{
+			margin-bottom: .5em;
+		}
+		section{
+			margin-bottom: 2em;
+		}
+	} /*END Item*/
+} /*END PROJECT*/
 
 /* BLOG */
 .blog{
@@ -54,6 +69,18 @@ $suppTextColor: #999;
 	.row{
 		div.link{
 			margin: .2em 1.2em 0 0;
+		}
+	} /*END Item*/
+} /*END BLOG*/
+
+/* POSTS */
+.post{
+	.row{
+		.content{
+/*			p{
+				font-size: 1.3em;
+				font-weight: 300;
+			}*/
 		}
 	} /*END Item*/
 } /*END BLOG*/

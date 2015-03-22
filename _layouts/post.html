@@ -3,33 +3,39 @@ layout: default
 ---
 {% include navbar-blog.html %}
 
-<div class="container">
+<div class="container post">
 	<div class="row">
 		<div class="col-xs-12">
-			<div class="post">
-				<a href="../../../../../blog">Posts</a> | <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
-				<h1 class="title">{{ page.title }}</h1>
-				{{ content }}
-				<p class="category">
-					<span>Category: </span>
-					{{ page.category }}
-				</p>
-				<p class="tags">
-					<span>Tags: </span>
-					{% for tag in page.tags %}
-					, {{ tag }}
-					{% endfor %}
-				</p>
-				<p class="pagination">
-					{% if paginator.previous_page %}
-					<a href="{{ prev_post }}"><span class="prev">&#x276e; Older Post</span></a>
-					{% endif %}
+			<a href="../../../../../blog">Posts</a> | <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
+			<h1 class="title">{{ page.title }}</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-9 col-md-6">
+			{{ content }}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<p class="category">
+				<span>Category: </span>
+				{{ page.category }}
+			</p>
+			<p class="tags">
+				<span>Tags: </span>
+				{% for tag in page.tags %}
+				, {{ tag }}
+				{% endfor %}
+			</p>
+			<p class="pagination">
+				{% if paginator.previous_page %}
+				<a href="{{ prev_post }}"><span class="prev">&#x276e; Older Post</span></a>
+				{% endif %}
 
-					{% if paginator.next_page %}
-					<a href="{{ next_post }}"><span class="next">Newer Post &#x276f;</span></a>
-					{% endif %}
-				</p>
-			</div>
+				{% if paginator.next_page %}
+				<a href="{{ next_post }}"><span class="next">Newer Post &#x276f;</span></a>
+				{% endif %}
+			</p>
 		</div>
 	</div>
 </div>
