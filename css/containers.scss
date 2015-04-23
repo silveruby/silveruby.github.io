@@ -4,19 +4,15 @@
 $primaryColor1: #EF9A9A; /*red 200*/
 $primaryColor2: #F44336; /*red 500*/
 $primaryColor3: #B71C1C; /*red 900*/
-$accentColor: #FFE0B2; /*orange 100*/
+$accentColor: #FBE9E7; /*orange 50*/
 $basicTextColor: #333;
-$suppTextColor: #999;
+$suppTextColor: #666;
 
 /*ALL CONTAINERS*/
 .portfolio, .project, .blog, .post, .connect{
 	.row{
 		margin-bottom: 1.5em;
-		
-		p{
-			color: $suppTextColor;
-			margin: 5px 0 0 0;
-		}
+
 		img.responsive{
 			width: 100%;
 		}
@@ -25,11 +21,26 @@ $suppTextColor: #999;
 
 /* PORTFOLIO */
 .portfolio{
+	
+	&.programming, &.design, &.academic{
+		padding: 2em 0;
+	}
+	
+	&.programming{
+		background-color: $accentColor;
+	}
+	&.academic{
+		background-color: $accentColor;
+	}
+		
 	.row{
 		p.timeline{
 			visibility: hidden;
 		}
 		
+		p.skills{
+			color: $suppTextColor;
+		}
 		&:hover{
 			p.timeline{
 				visibility: visible;
@@ -43,6 +54,9 @@ $suppTextColor: #999;
 	.row{
 		header{
 			margin-bottom: .5em;
+		}
+		p.skills{
+			color: $suppTextColor;
 		}
 		section{
 			margin-bottom: 2em;
@@ -76,11 +90,15 @@ $suppTextColor: #999;
 /* POSTS */
 .post{
 	.row{
-		.content{
-/*			p{
-				font-size: 1.3em;
-				font-weight: 300;
-			}*/
-		}
+/*		p{
+			color: $basicTextColor;
+			margin-bottom: 1em;
+		}*/
 	} /*END Item*/
-} /*END BLOG*/
+} /*END POST*/
+
+/* FOOTER */
+footer{
+	padding: 2em 0;
+	font-size: .9em;
+} /*END FOOTER*/
