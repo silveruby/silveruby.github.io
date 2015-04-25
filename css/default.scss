@@ -65,7 +65,7 @@ body
 				margin: 2em 0;
 				padding: 0;
 			}
-			
+
 			h1{
 				font-size: 3.0em;
 				font-weight: 300;
@@ -87,6 +87,23 @@ body
 				font-size: 1.0em;
 				font-weight: 400;
 				line-height: 1.5;
+			}
+			a{
+				span.new_tab{
+					font-size: .5em;
+					margin: 0 1em;
+					font-weight: 600;
+					display: none;
+					color: $basicTextColor;
+					text-decoration: none;
+				}
+
+				&:hover{
+					span.new_tab{
+						display: inline;
+						text-decoration: none;
+					}
+				}
 			}
 		}
 

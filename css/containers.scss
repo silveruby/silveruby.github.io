@@ -37,14 +37,14 @@ $suppTextColor: #666;
 		p.timeline{
 			visibility: hidden;
 		}
-		
-		p.skills{
-			color: $suppTextColor;
-		}
 		&:hover{
 			p.timeline{
 				visibility: visible;
 			}
+		}
+		p.skills{
+			color: $suppTextColor;
+			margin: 5px 0 2px 0;
 		}
 	} /*END Item*/
 } /*END PORTFOLIO*/
