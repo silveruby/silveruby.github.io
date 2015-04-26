@@ -34,14 +34,6 @@ $suppTextColor: #666;
 	}
 		
 	.row{
-		p.timeline{
-			visibility: hidden;
-		}
-		&:hover{
-			p.timeline{
-				visibility: visible;
-			}
-		}
 		p.skills{
 			color: $suppTextColor;
 			margin: 5px 0 2px 0;

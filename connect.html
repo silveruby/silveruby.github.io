@@ -45,12 +45,22 @@ title: Connect
 	<div class="row">
 		<div class="col-xs-12 col-lg-6">	
 			<h1>Quick Message</h1>
-			<form>
+			<form action="#" id="form" method="post" name="form">
+				<div class="form-group">
+				    <label for="subject">Subject</label>
+				    <input type="subject" class="form-control" id="subject" placeholder="Enter subject">
+			  </div>				
+				<div class="form-group">
+				    <label for="email">Email address</label>
+				    <input type="email" class="form-control" id="email" placeholder="Enter email">
+			  </div>
 			  <div class="form-group">
-			    <textarea class="form-control" rows="5"></textarea>
+			  	<label for="message">Message</label>
+			    <textarea class="form-control" id="message" rows="5"></textarea>
 			  </div>
 			  <button type="submit" class="btn btn-default">Send</button>
 			</form>
+			<?php include "send_form_email.php"?>
 		</div>
 		<div class="col-lg-offset-6"></div>
 	</div>
