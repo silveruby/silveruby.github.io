@@ -21,7 +21,7 @@ $headers = 'From:'. $email . "\r\n"; // Sender's Email
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
 mail("zhengsan@gmail.com", $subject, $message, $headers);
-echo "Your mail has been sent successfuly ! Thank you for your feedback";
+header("Location: confirmation.html");
 }
 }
 }
