@@ -6,7 +6,6 @@ title: Message Sent
 
 <div class="container">
     <?php
-        echo var_dump($_POST);
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             // Checking For Blank Fields...
             if($_POST['email']==""||$_POST['subject']==""||$_POST['message']==""){
@@ -37,9 +36,11 @@ title: Message Sent
                     // Send Mail By PHP Mail Function
                     mail('zhengsan@gmail.com', $subject, $message, $headers);
 
-                    echo '<div class="content">
+                    echo 
+                    '<div class="content">
                         <h1>Uh-oh</h1>
                         <p class="lead">Your message has been sent! Thanks for visiting and chat soon!</p>
+                        <p class="lead"><a href="../index.html">Return to home</a></p>
                     </div>';
                 }
             }
