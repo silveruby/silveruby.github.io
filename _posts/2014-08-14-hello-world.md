@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-category: programming
+category: site-related
 tags: jekyll blog
 ---
 
