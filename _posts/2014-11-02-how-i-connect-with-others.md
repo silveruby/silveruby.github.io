@@ -4,6 +4,7 @@ title: How I connect with others
 category: spiritual
 tags: art people 
 ---
+
 There are many ways to connect with others. While most people prefer to connect with people by talking to them, for me, I love to connect with people through the works they create - be it art, photographs, writings or even programming codes. I love to look at a piece of work and be able to see the gentle sensitivity, patience and hard-work that were put into it by its owner. To me, that says everything about a person's inner feelings and thoughts.  
 
 One of my favorite artists is Constantin Brâncuși. He is a Romanian artist who lived in France and considered one of the pioneers of Modernism. When I saw his sculpture "The Newborn", I felt a familiar tug at my soul and shiver down my spine. It is a very simple sculpture yet somehow it perfectly communicated all the elegance and balance of life. Although I have not had the opportunity to see it in person, even in pictures, I am captivated by its beauty. 
