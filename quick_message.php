@@ -11,7 +11,7 @@ title: Message Sent
             if($_POST['email']==""||$_POST['subject']==""||$_POST['message']==""){
                 echo '<div class="content">
                         <h1>Uh-oh</h1>
-                        <p class="lead">Your message was not sent. Please re-submit and make sure all fields are entered.</p>
+                        <p class="lead">Your message was not sent. Please <a href="../connect.html">go back</a>and make sure to fill out all fields.</p>
                     </div>';
             }
             else{
@@ -24,7 +24,7 @@ title: Message Sent
                 if (!$email){
                     echo '<div class="content">
                         <h1>Uh-oh</h1>
-                        <p class="lead">Your message was not sent. Please re-submit and make sure your email is accurately entered.</p>
+                        <p class="lead">Your message was not sent. Please <a href="../connect.html">go back</a>and make sure to enter a valid email address.</p>
                         </div>';
                 }
                 else{
@@ -38,7 +38,7 @@ title: Message Sent
 
                     echo 
                     '<div class="content">
-                        <h1>Uh-oh</h1>
+                        <h1>Great!</h1>
                         <p class="lead">Your message has been sent! Thanks for visiting and chat soon!</p>
                         <p class="lead"><a href="../index.html">Return to home</a></p>
                     </div>';
